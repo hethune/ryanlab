@@ -10,7 +10,7 @@
 $BRAIN_PATH = '/home/hwen/labwebsite/www/backend/brain';
 
 // Where are the templates stored?
-$TEMPLATE_PATH = '/home/hwen/labwebsite/www/brain/templates';
+$TEMPLATE_PATH = '/home/hwen/labwebsite/www/backend/brain/templates';
 
 // What top level directory do you want to contain uploads?
 $UPLOAD_PATH = '/home/hwen/labwebsite/www/images';
