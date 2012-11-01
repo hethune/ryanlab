@@ -1,0 +1,81 @@
+.sm {
+	list-style:none;
+	width:663px;
+	height:300px;
+	display:block;
+	overflow:hidden;
+	margin: 0;
+	padding: 0;
+	color: #ffffff;
+}
+
+.sm li {
+	float:left;
+	display:inline;
+	overflow:hidden;
+	margin: 0;
+	padding: 0;
+	background-position: top left;
+	background-repeat: no-repeat;
+	background-color: #ffffff;
+}
+
+#sm li a.label{
+	display: block;
+	float: left;
+	width: 49px;
+	height: 300px;
+	margin-right: 16px;
+	text-indent: -4000px;
+}
+
+#sm li .content{
+	float: left;
+}
+
+#sm li h3{
+	color: #ffffff;
+	padding-top: 8px;
+}
+
+#sm li h4{
+	font-size: .9em;
+	line-height: 1.3em;
+}
+
+#sm li h4 a{
+	color: #ffffff;
+}
+
+#sm li .project{
+	height: 70px;
+	margin-top: 12px;
+}
+
+#sm li .project a:hover{
+  text-decoration: underline;
+}
+
+#sm li .project .thumb{
+	width: 70px;
+	height: 70px;
+	float: left;
+	margin-right: 8px;
+	overflow: hidden;
+}
+
+#sm li .project .details{
+	width: 320px;
+	float: left;
+}
+
+#sm li .project .details p{
+	font-size: .8em;
+	width: 92%;
+}
+
+#sm li#slideMems{ background-image: url("images/mems.jpg"); background-color: #004561; }
+#sm li#slideNems{ background-image: url("images/nems.jpg"); background-color: #022a06; }
+#sm li#slideNanomats{ background-image: url("images/nanomats.jpg"); background-color: #520202; }
+#sm li#slideBiomems{ background-image: url("images/biomems.jpg"); background-color: #3b1057; }
+#sm li#slideEnergy{ background-image: url("images/energy.jpg"); background-color: #121549; }

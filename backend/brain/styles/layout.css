@@ -1,0 +1,94 @@
+.header, .groupHeader{
+	display: block;
+	margin-bottom: 8px;
+	font-size: 1.7em;
+	font-weight: bold;
+	line-height: 1.2em;
+}
+
+.groupHeader{
+	font-size: 2em;
+	clear: left;
+	border-width: 0 0 1px 0;
+	border-style: solid;
+	padding-bottom: 4px;
+}
+
+.message{
+	border: 1px solid;
+	padding: 2px 6px;
+	line-height: 2em;
+	margin-bottom: 16px;
+	font-weight: bold;
+}
+
+ul.menu li{
+	margin-bottom: 8px;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+ul.menu a{
+	text-decoration: none;
+}
+
+ul.menu a:hover{
+	text-decoration: underline;
+}
+
+label{
+	display: block;
+	font-weight: bold;
+	font-size: 1.2em;
+	margin-bottom: 8px;
+}
+
+input, textarea{
+	width: 100%;
+	display: block;
+	margin-bottom: 16px;
+	padding: 2px;
+}
+
+input.button{
+	width: auto;
+	font-size: 1.4em;
+	margin-top: 16px;
+}
+
+input.radio{
+	width: auto;
+	display: inline;
+	margin-bottom: 4px;
+	padding: 0;
+}
+
+select{
+	margin-bottom: 16px;
+}
+
+table.list{
+	width: 100%:
+}
+
+table.list th{
+	font-size: 1.4em;
+	font-weight: bold;
+	line-height: 1.4em;
+	padding: 4px 6px;
+	border: 1px solid;
+	border-width: 0 0 1px 0;
+}
+
+table.list td{
+	padding: 4px 6px;
+}
+
+table.list a{
+	font-weight: bold;
+	text-decoration: none;
+}
+
+table.list a:hover{
+	text-decoration: underline;
+}

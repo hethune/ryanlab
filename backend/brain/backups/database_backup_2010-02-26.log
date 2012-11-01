@@ -1,0 +1,6 @@
+2010-02-26 21:46:35: Executing MySQL Backup Script v1.4
+2010-02-26 21:46:35: Processing Databases..
+2010-02-26 21:46:35: Dumped DB: linlab
+2010-02-26 21:46:35: Compressed DB: linlab
+2010-02-26 21:46:35: Archiving files..
+2010-02-26 21:46:35: Backup complete!

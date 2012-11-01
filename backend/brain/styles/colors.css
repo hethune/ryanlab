@@ -1,0 +1,46 @@
+.header{
+	color: #363636;
+}
+
+.groupHeader{
+	color: #1c4966;
+	/* color: #11916e; */
+}
+
+.groupHeader{
+	border-color: #444444;
+}
+
+ul.menu a{
+	color: #666666;
+}
+
+ul.menu a:hover{
+	color: #232323;
+}
+
+.success{
+	color: #3d7642;
+	border-color: #61c46b;
+	background-color: #caeece;
+}
+
+.error{
+	color: #890e0e;
+	border-color: #a33232;
+	background-color: #f2cdcd;
+}
+
+.info{
+	color: #747474;
+	border-color: #9b9b9b;
+	background-color: #e4e4e4;
+}
+
+table.list tr.zebra{
+	background-color: #ededed;
+}
+
+table.list th{
+	border-color: #aaaaaa;
+}

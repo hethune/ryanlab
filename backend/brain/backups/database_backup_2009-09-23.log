@@ -1,0 +1,15 @@
+2009-09-23 20:47:24: Executing MySQL Backup Script v1.4
+2009-09-23 20:47:24: Processing Databases..
+2009-09-23 20:47:24: Dumped DB: linlab
+2009-09-23 20:47:24: COMPRESSION FAILED
+'zip' is not recognized as an internal or external command,
+operable program or batch file.
+2009-09-23 20:47:24: Archiving files..
+2009-09-23 20:47:24: FAILED
+'zip' is not recognized as an internal or external command,
+operable program or batch file.
+2009-09-23 20:47:24: *** ERRORS DETECTED! ***
+Check your email account user@domain.com for more information!
+2009-09-23 20:47:24: There were errors!
+2009-09-23 20:47:24: Emailing error log to user@domain.com ..
+2009-09-23 20:47:25: FAILED to email error log.

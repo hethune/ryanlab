@@ -1,0 +1,240 @@
+<?php
+function outputMembers($group){
+	foreach($group as $person){
+		// Set parameters
+		$fullName = $person[0] . ' ' . $person[1] . ' ' . $person[2];
+		$graduation = $person[5] . '/' . $person[6];
+		$email = $person[3];
+		if($email == null){
+			$email = '#" style="visibility: hidden;';
+		}
+		$photo = $person[4];
+		if($photo == null){
+			$photo = "/images/members/defaultMember.gif";
+		}
+		?>
+<div class="student">
+			<div class="thumb"><img class="portrait" src=" <?php echo $photo; ?>" alt="<?php echo $fullName; ?>" /></div>
+			<div class="name"><?php echo $fullName; ?></div>
+			<a class="email" href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
+		</div>
+		<?php
+	}
+}
+
+function outputMembersPast($group){
+  ?>
+  <table id="alumni" border="0" cellpadding="0" cellspacing="0">
+  <tr><th class="name">Alumnus</th><th class="graduation">Graduation</th><th class="activity">Current Activity</th></tr>
+  <?php
+  $zebra = ' class="zebra"';
+  foreach($group as $person){
+    // Set parameters
+ 		$fullName = $person[0] . ' ' . $person[1] . ' ' . $person[2];
+		$graduation = $person[3] . '/' . $person[4];
+    $currentActivity = $person[5];
+    if($zebra == ''){
+      $zebra = ' class="zebra"';
+    } else {
+      $zebra = '';
+    }
+    ?>
+    <tr<?php echo $zebra; ?>><td class="bold"><?php echo $fullName; ?></td><td class="textC"><?php echo $graduation; ?></td><td><?php echo $currentActivity; ?></td></tr>
+    <?php
+  }
+  ?>
+  </table>
+  <?php
+}
+
+function outputFaculty($group){
+	foreach($group as $person){
+		// Set parameters
+		$fullName = $person[0] . ' ' . $person[1] . ' ' . $person[2];
+		$email = $person[3];
+		$photo = $person[4];
+		$address = $person[5];
+		$contact = $person[6];
+		$degree = $person[7];
+		if($degree == 'Head'){
+			$position = '<i>Professor, Department of Mechanical Engineering</i><br />
+				<i>Co-Director, Berkeley Sensor and Actuator Center</i>';
+		}
+		else{
+			$position = null;
+		}
+		?>
+<div class="faculty">
+        	<img class="portrait" src="<?php echo $photo; ?>" alt="<?php echo $fullName; ?>" />
+        	<p class="bio">
+        		<b><?php echo $fullName; ?></b><br />
+				<?php echo $position; ?>
+        	</p>
+        	
+        	<p class="contact">
+				<?php echo nl2br($address); ?>
+        	</p>
+        	
+        	<p class="contact">
+				<?php echo nl2br($contact); ?>
+				<br />
+				<b>E-mail:</b> <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
+        	</p>
+        </div>
+		<?php
+	}
+}
+
+function outputNews($news){
+	echo '<ul id="articles">' . "\n";
+	$count = 0;
+	foreach($news as $item){
+		/* Accent for future use. Maybe add link with image of project?
+		// Output accent in middle
+		$count++;
+		if($count == (count($news)/2)+1){
+			echo '<li><img src="images/accentCircuit.gif" alt="" /></li>';
+		}
+		*/
+		
+		$title = $item[0];
+		$link = $item[1];
+		$day = $item[3];
+		$year = $item[4];
+		switch($item[2]){
+			case '1':	$month = 'Jan'; break;
+			case '2':	$month = 'Feb'; break;
+			case '3':	$month = 'Mar'; break;
+			case '4':	$month = 'Apr'; break;
+			case '5':	$month = 'May'; break;
+			case '6':	$month = 'Jun'; break;
+			case '7':	$month = 'Jul'; break;
+			case '8':	$month = 'Aug'; break;
+			case '9':	$month = 'Sep'; break;
+			case '10':	$month = 'Oct'; break;
+			case '11':	$month = 'Nov'; break;
+			case '12':	$month = 'Dec'; break;
+		}
+		$date = $month . ' ' . $day . ', ' . $year;		
+		
+		if($link != ''){
+			?>
+			<li><span class="date"><?php echo $date; ?></span> - <a class="article" href="<?php echo $link; ?>"><?php echo $title; ?></a></li>
+			<?php
+		}
+		else {
+			?>
+			<li><span class="date"><?php echo $date; ?></span> - <?php echo $title; ?></li>
+			<?php
+
+		}
+	}
+	echo '</ul>';
+}
+
+function outputCourses($courses){
+	echo '<ul id="courses">' . "\n";
+	foreach($courses as $course){
+		$title = $course[0];
+		$link = $course[1];
+		$semester = $course[2];
+		$year = $course[3];
+		if($link != ''){
+			?>
+			<li><a href="<?php echo $link; ?>"><?php echo $title; ?> - <?php echo $semester; ?> <?php echo $year; ?></a></li>
+			<?php
+		}
+		else {
+			?>
+			<li class="bold"><?php echo $title; ?> - <?php echo $semester; ?> <?php echo $year; ?></li>
+			<?php
+		}
+	}
+	echo '</ul>' . "\n";
+}
+
+function outputHonors($honors){
+	echo '<ul id="honors">' . "\n";
+	foreach($honors as $honor){
+		$title = $honor[0];
+		$link = $honor[1];
+		$year = $honor[2];
+		?>
+		<li><span class="date"><?php echo $year; ?></span> - 
+		<?php
+		if($link != ''){
+			?>
+			<a href="<?php echo $link; ?>"><?php echo $title; ?></a></li>
+			<?php
+		}
+		else {
+			echo $title . '</li>' . "\n";
+		}
+	}
+	echo '</ul>' . "\n";
+}
+
+function outputBiography($bio){
+	$paragraphs = explode("\r", $bio);
+	foreach($paragraphs as $paragraph){
+		if(trim($paragraph) != null){
+			echo '<p>' . $paragraph . '</p>' . "\r";
+		}
+	}
+}
+
+function getLead($id){
+	global $sql;	// Reference global sql bridge
+	
+	$lead = $sql->getRows('SELECT FirstName, LastName FROM members WHERE id=' . $id . ' LIMIT 1');
+	return implode(' ', $lead[0]);
+}
+
+function outputProjects($projects){
+	foreach($projects as $project){
+		$title = $project[0];
+		$lead = $project[1];
+		$picture = $project[2];
+		$description = $project[3];
+		$id = $project[4];
+		?>
+		<div class="project">
+			<div class="thumbnail"><img src="<?php echo $picture; ?>" alt="<?php echo $title; ?>" /></div>
+			<div class="info">
+				<h3><a name="<?php echo $id; ?>"><?php echo $title; ?></a></h3>
+				<p class="description"><?php echo $description; ?></p>
+				<p class="lead">Lead Researcher: <span class="bold"><?php echo getLead($lead); ?></span></p>
+			</div>
+		</div>
+		
+		<div class="top"><a href="#">Back to Top</a></div>
+		<?php
+	}
+}
+
+function outputAccordionProjects($projects, $field){
+	foreach($projects as $project){
+		$id = $project[0];
+		$title = $project[1];
+		$abstract = $project[2];
+		$picture = $project[3];
+		switch($field){
+        case '1': $category = 'mems'; break;
+        case '2': $category = 'nems'; break;
+        case '3': $category = 'nanomaterials'; break;
+        case '4': $category = 'biomems'; break;
+        case '5': $category = 'energy'; break;
+		}
+		/* <h4><a href="research.php?field=<?php echo $field; ?>#<?php echo $id; ?>"><?php echo $title; ?></a></h4> */
+		?>
+<div class="project">
+			<div class="thumb"><img src="<?php echo $picture; ?>" alt=""></div>
+			<div class="details">
+				<h4><a href="/research/<?php echo $category; ?>/#<?php echo $id; ?>"><?php echo $title; ?></a></h4>
+				<p><?php echo $abstract; ?></p>
+			</div>
+		</div>
+		<?php
+	}
+}
+?>

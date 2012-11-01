@@ -1,0 +1,507 @@
+/* Initialization */
+@import url("reset.css");
+
+/* General Styling */
+html, body{
+	background: url("images/background9.jpg") no-repeat center top #030e12;
+	background-attachment: fixed;
+	font-family: "Arial",Geneva,Verdana,Helvetica,sans-serif;
+	font-size: 10pt;
+	line-height: 1.4em;
+	color: #282828;
+}
+
+a{
+	color: #035e80;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #82a33a;
+}
+
+/* Headers */
+h1{
+	height: 56px;
+	margin-bottom: 10px;
+	text-indent: -4000px;
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+
+h2, h3{
+	font-family: "Helvetica",Arial,sans-serif;
+}
+
+h2{
+	border-bottom: 2px solid #dddddd;
+	font-size: 2.5em;
+	line-height: 1em;
+	color: #283631;
+	clear: both;
+	padding-bottom: 8px;
+}
+
+h3{
+	font-size: 1.5em;
+	line-height: 1.5em;
+	font-weight: bold;
+	color: #747474;
+}
+
+#sidebar h3{
+	text-indent: -4000px;
+	line-height: 1em;
+}
+
+/* Structural Wrap */
+#wrap{
+	padding: 40px 0 40px 0;
+	font-size: 1.0em;
+}
+
+#main{
+	width: 900px;
+	background-color: #fff;
+	margin: 0 auto;
+	overflow: hidden;
+  	border-top: 1px solid #e4e4e4;
+	border-left: 1px solid #e4e4e4;
+	border-right: 1px solid #d2d2d2;
+	border-bottom: 1px solid #d2d2d2;
+}
+
+#sidebar{
+	width: 169px;
+	float: left;
+}
+
+#sidebar #logo{
+	display: block;
+	width: 100%;
+	height: 56px;
+	background: url("images/logo0.gif") no-repeat top left;
+	text-indent: -2000px;
+}
+
+#sidebar #menu{
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 8px 0;
+	font-size: 9pt;
+	letter-spacing: 1px;
+}
+
+#sidebar #menu li{
+	padding-top: 14px;
+	line-height: 8pt;
+}
+
+#sidebar #menu a{
+	color: #484848;
+	text-decoration: none;
+	padding: 4px 4px 3px;
+}
+
+#sidebar #menu a:hover{
+	background-color: #87b623;
+	color: #ffffff;
+}
+
+#home a#navHome,
+#news a#navNews,
+#research a#navResearch,
+#members a#navMembers,
+#publications a#navPublications,
+#lin a#navLin,
+#sponsors a#navSponsors,
+#home a#navHome:hover,
+#news a#navNews:hover,
+#research a#navResearch:hover,
+#members a#navMembers:hover,
+#publications a#navPublications:hover,
+#lin a#navLin:hover,
+#sponsors a#navSponsors:hover{
+	background-color: #1a3f5f;
+	color: #ffffff;
+}
+
+#sidebar #contact, #sidebar p#copyright{
+	color: #505050;
+	font-size: .9em;
+}
+
+#sidebar p#copyright{
+	padding: 0 0 24px 0;
+}
+
+#sidebar a#bsac{
+	display: block;
+	width: 152px;
+	height: 125px;
+	text-indent: -4000px;
+	background: url("images/bsac.gif") no-repeat bottom center;
+}
+
+#contact{
+	padding: 23px 0;
+}
+
+#contact h3{
+	background: url("images/titleContact.gif") no-repeat top left #fff;
+	margin-bottom: 10px;
+}
+
+#contact p.address{
+	padding-bottom: 1em;
+}
+
+#content{
+	float: right;
+	width: 663px;
+	padding-bottom: 24px;
+	overflow: hidden;
+}
+
+/* Tags */
+b{
+  font-weight: bold;
+}
+
+blockquote{
+  margin-top: 12px;
+  padding: 6px 8px 8px 8px;
+  border: 1px solid #1a3f5f;
+  border-width: 1px 0;
+  font-size: 1.3em;
+  letter-spacing: 2px;
+  font-family: "Trebuchet MS",serif;
+  line-height: 1.4em;
+  color: #1a3f5f;
+}
+
+/* Content Classes */
+.column{
+	width: 48%;
+}
+
+.columnWide{
+	width: 65%;
+}
+
+.columnThin{
+	width: 34%;
+}
+
+.block{ display: block; }
+
+.top{
+	margin: 8px 0;
+	text-align: right;
+	clear: both;
+}
+
+.top a{
+	padding: 3px 6px;
+	text-decoration: none;
+	font-size: .8em;
+	font-weight: bold;
+	color: #ffffff;
+	background-color: #1a3f5f;
+}
+
+.top a:hover{
+	background-color: #87b623;
+}
+
+ul#articles .date, ul#honors .date{
+	font-weight: bold;
+}
+
+ul#articles li, ul#courses li, ul#honors li, ul#twitter_update_list li{
+	padding: 8px 0;
+	font-size: 1em;
+	line-height: 1.3em;
+	border-bottom: 1px solid #eeeeee;
+}
+
+ul#articles a, ul#courses a, ul#honors a{
+	text-decoration: none;
+}
+
+/* Padding Classes */
+.padR{ padding-right: 10px; }
+.padAll{ padding: 23px; }
+
+/* Text Classes */
+.textC{ text-align: center; }
+.textR{ text-align: right; }
+.bold{ font-weight: bold; }
+
+/* Clear and Float Classes */
+.clearL{ clear: left; }
+.clearR{ clear: right; }
+.floatL{ float: left; }
+.floatR{ float: right; }
+
+/* Home */
+/* -------------------------------- */
+#home h1{
+	background-image: url("../images/headers/home.jpg");
+}
+
+#home .column p{
+	margin-top: 10px;
+}
+
+#home .floatL p{
+	font-size: 1.2em;
+	line-height: 1.4em;
+}
+
+#home h2 a{
+	font-weight: normal;
+}
+
+/* News */
+/* -------------------------------- */
+#news h1{
+	background-image: url("../images/headers/news.jpg");
+}
+
+ul#twitter_update_list{
+	margin-bottom: 8px;
+}
+
+/* Members Page */
+/* -------------------------------- */
+#members h1{
+	background-image: url("../images/headers/members.jpg");
+}
+
+#members #content h2{
+	margin-bottom: 16px;
+}
+
+.faculty{
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+.faculty .portrait{
+	display: block;
+	float: left;
+	padding: 0 12px 12px 0;
+}
+
+.faculty p.bio{
+	padding: 0;
+}
+
+.faculty p.contact{
+	padding-top: 12px;
+	width: 40%;
+	float: left;
+}
+
+.student{
+	float: left;
+	width: 33%;
+	text-align: center;
+	margin: 0 0 18px 0
+}
+
+.student .thumb, .student .name{
+	display: block;
+	margin: 0 auto;
+}
+
+.student .thumb{
+	width: 120px;
+	height: 120px;
+	overflow: hidden;
+	text-align: center;
+}
+
+.student .name{
+	font-weight: bold;
+}
+
+.student .thumb img.portrait{
+	vertical-align: middle;
+}
+
+.student a.email{
+	height: 1em;
+}
+
+h3.former{
+	background-image: url("images/formerStudentsButton.jpg");
+	height: 140px;
+	margin: 0 auto;
+	clear: left;
+}
+
+/* Former Members Page */
+/* -------------------------------- */
+table.former{
+	margin-bottom: 32px;
+	border-top: 1px solid #b8d0d9;
+	width: 100%;
+}
+
+table.former tr{
+	border-bottom: 1px solid #b8d0d9;
+}
+
+table.former td{
+	padding: 6px;
+	vertical-align: top;
+}
+
+table.former tr.stripe{ background-color: #eee; }
+table.former td.name{ width: 25%; }
+
+/* Publications Page */
+/* -------------------------------- */
+#publications #content h1{
+	background-image: url("../images/headers/publications.jpg");
+}
+
+#publications #content h2{
+	text-align: center;
+	border-bottom: 1px solid #c7c7c7;
+	background: url("images/publicationYearBg.gif") no-repeat bottom center;
+	padding: 4px 0;
+}
+
+#publications #content h3{
+	text-align: center;
+	padding: 8px 0;
+}
+
+#publications .top{
+	margin-bottom: 16px;
+}
+
+.pubs th{
+	font-weight: bold;
+	background-color: #edf3f3;
+	color: #1a5052;
+	border-top: 1px solid #d2e2e3;
+	border-right: 1px solid #9fc2c4;
+	border-bottom: 1px solid #9fc2c4;
+	border-left: 1px solid #d2e2e3;
+	text-align: left;
+}
+
+.pubs tr{
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.pubs tr.zebra{
+	background-color: #efefef;
+}
+
+.pubs td{
+	vertical-align: top;
+}
+
+.pubs th, .pubs td{
+	padding: 4px 6px;
+}
+
+.pubs td.cite{
+}
+
+.pubs td.id, .pubs td.pdf{
+	text-align: center;
+}
+
+/* Sponsors Page */
+/* -------------------------------- */
+#sponsors h1{
+	background-image: url("../images/headers/sponsors.jpg");
+}
+
+.sponsor{
+	width: 49.5%;
+	float: left;
+	overflow: hidden;
+}
+
+/* Research Projects Page */
+/* -------------------------------- */
+#research h1{
+	background-image: url("../images/headers/research.jpg");
+}
+
+#research #content p{
+	padding: 0;
+}
+
+.project{
+	width: 100%;
+	overflow: hidden;
+}
+
+.project .thumbnail{
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	float: left;
+}
+
+.project .info{
+	width: 451px;
+	float: right;
+}
+
+.project .info h3{
+	border-bottom: 1px solid #d2d2d2;
+	padding-bottom: 6px;
+}
+
+.project .info h3, .project .info h3 a{
+	font-weight: bold;
+	margin-bottom: 12px;
+	line-height: 1em;
+	color: #333333;
+	cursor: default;
+}
+
+.project .info p.description{
+	margin-bottom: 12px;
+}
+
+.project .info p.lead{
+	font-style: italic;
+	color: #707070;
+}
+
+.project .info p.lead span{
+	color: #333333;
+	font-style: normal;
+}
+
+/* Dr. Lin's Page */
+/* -------------------------------- */
+#lin h1{
+	background-image: url("../images/headers/lin.jpg");
+}
+
+#lin #profile, #lin #biography{
+	width: 100%;
+	overflow: hidden;
+	margin: 10px 0;
+}
+
+#lin #content p{
+	margin-bottom: 10px;
+}
+
+#lin #content p img{
+	margin: 10px;
+}

@@ -1,0 +1,11 @@
+[12-Sep-2009 01:39:12] PHP Warning:  Invalid argument supplied for foreach() in /home/richwins/public_html/projects/linlab/backend/brain/list.class.php on line 120
+[12-Sep-2009 01:39:33] PHP Warning:  Invalid argument supplied for foreach() in /home/richwins/public_html/projects/linlab/backend/brain/list.class.php on line 120
+[12-Sep-2009 01:42:04] PHP Warning:  include(/home/richwins/public_html/projects/linlab/backend/brain/templates/upload_projects/upload.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/richwins/public_html/projects/linlab/backend/brain/brain.php on line 75
+[12-Sep-2009 01:42:04] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening '/home/richwins/public_html/projects/linlab/backend/brain/templates/upload_projects/upload.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/richwins/public_html/projects/linlab/backend/brain/brain.php on line 75
+[12-Sep-2009 01:42:37] PHP Warning:  Invalid argument supplied for foreach() in /home/richwins/public_html/projects/linlab/backend/brain/list.class.php on line 120
+[13-Sep-2009 16:04:28] PHP Warning:  mysql_fetch_assoc(): supplied argument is not a valid MySQL result resource in /home/richwins/public_html/projects/linlab/backend/brain/mysqlbridge.class.php on line 80
+[13-Sep-2009 16:04:28] PHP Warning:  Invalid argument supplied for foreach() in /home/richwins/public_html/projects/linlab/backend/brain/list.class.php on line 120
+[13-Sep-2009 16:04:53] PHP Warning:  mysql_fetch_assoc(): supplied argument is not a valid MySQL result resource in /home/richwins/public_html/projects/linlab/backend/brain/mysqlbridge.class.php on line 80
+[13-Sep-2009 16:04:53] PHP Warning:  Invalid argument supplied for foreach() in /home/richwins/public_html/projects/linlab/backend/brain/list.class.php on line 120
+[13-Sep-2009 16:20:55] PHP Warning:  mysql_fetch_assoc(): supplied argument is not a valid MySQL result resource in /home/richwins/public_html/projects/linlab/backend/brain/mysqlbridge.class.php on line 80
+[13-Sep-2009 16:20:55] PHP Warning:  Invalid argument supplied for foreach() in /home/richwins/public_html/projects/linlab/backend/brain/list.class.php on line 120

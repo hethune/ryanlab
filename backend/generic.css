@@ -1,0 +1,44 @@
+.col{
+	width: 42%;
+	margin-right: 7%;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+#bar{
+	background-color: #eeeeee;
+	border: 1px solid #cccccc;
+	padding: 6px 12px;
+	line-height: 2em;
+	margin-bottom: 16px;
+}
+
+#bar span{
+	font-size: 1.4em;
+	font-weight: bold;
+	color: #333333;
+	vertical-align: middle;
+}
+
+a#return{
+	display: block;
+	float: right;
+	width: 8%;
+	text-align: right;
+	text-decoration: none;
+	vertical-align: middle;
+	font-weight: bold;
+}
+
+.menuCol{
+	width: 32%;
+	float: left;
+	margin-right: 1%;
+	margin-bottom: 16px;
+}
