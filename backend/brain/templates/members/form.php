@@ -12,9 +12,9 @@ $form->text('FirstName');
 $form->text('LastName');
 $form->text('Email');
 $form->text('Photo');
-$form->select('Degree', array('Ph.D.'=>'Ph.D.','M.S.'=>'M.S.','Post Doc'=>'Post Doc','Undergrad'=>'Undergrad', 'Alumnus'=>'Alumnus', 'Visitor'=>'Visitor','Advisor'=>'Advisor','Head'=>'Head', 'Grants'=>'Grants'));
+$form->select('Degree', array('Researcher'=>'Researcher', 'Visitor'=>'Visitor','Faculty Advisor/Collaborators'=>'Advisor','Program Director'=>'ProgramDirector','Co-Director'=>'CoDirector','Alumni'=>'Alumni'));
 $form->date('GraduationMonth','m');
-$form->date('GraduationYear','y+10');
+$form->date('GraduationYear','y+2');
 ?>
 </div>
 

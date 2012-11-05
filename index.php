@@ -20,67 +20,42 @@ $energy = $sql->getRows("SELECT id, Title, ShortAbstract, TinyPicture FROM proje
 	<script type="text/javascript" src="/slidemenu/slidemenu.js"></script>
 	<link rel="stylesheet" type="text/css" href="/slidemenu/slidemenu.css" />
 	
-	<title>The Liwei Lin Lab</title>
+	<title>The M3B LAB</title>
 </head>
 
-<body id="home" onload="slideMenu.build('sm',467,10,10,1)">
+<body id="home">
 <div id="wrap">
   <div id="main">
     <div class="padAll">
     
       <div id="sidebar">
-		<?php include("sidebar.php"); ?>
+		    <?php include("sidebar.php"); ?>
       </div>
       
       <div id="content">      	
-      <ul id="sm" class="sm">
-        <li id="slideMems">
-          <a class="label" href="/research/mems/">MEMS</a>
-          <div class="content">
-            <h3>Featured Projects</h3>
-            <?php outputAccordionProjects($mems, 1); ?>
-          </div>
-        </li>
-        <li id="slideNems">
-          <a class="label" href="/research/nems/">NEMS</a>
-          <div class="content">
-            <h3>Featured Projects</h3>
-            <?php outputAccordionProjects($nems, 2); ?>
-          </div>
-        </li>
-        <li id="slideNanomats">
-          <a class="label" href="/research/nanomaterials/">Nanomaterials</a>
-          <div class="content">
-            <h3>Featured Projects</h3>
-            <?php outputAccordionProjects($nanomats, 3); ?>
-          </div>
-        </li>
-        <li id="slideBiomems">
-          <a class="label" href="/research/biomems/">BioMEMS</a>
-          <div class="content">
-            <h3>Featured Projects</h3>
-            <?php outputAccordionProjects($biomems, 4); ?>
-          </div>
-        </li>
-        <li id="slideEnergy">
-          <a class="label" href="/research/energy/">Energy</a>
-          <div class="content">
-            <h3>Featured Projects</h3>
-            <?php outputAccordionProjects($energy, 5); ?>
-          </div>
-        </li>
-      </ul>
-		<br />
-		<div class="column floatL">
-        	<h2>About Us</h2>
-			<p>The Liwei Lin Lab at UC Berkeley focuses on applying the principles of mechanical engineering to a wide range of applications in growing fields, including <a href="/research/mems/">MEMS</a> (Microelectromechanical Systems), <a href="/research/nems/">NEMS</a> (Nanoelectromechanical Systems), Nanotechnology, Synthesis of <a href="/research/nanomaterials/">Nanomaterials</a>, <a href="/research/biomems/">BioMEMS</a> (Biological Microelectromechanical Systems), Microfluidics, Plasmonics, and <a href="/research/energy/">Energy</a>.</p>
-		</div>
-        
-        <div class="column floatR">
-			<h2><a href="/news/">News &amp; Awards</a></h2>
-			<?php outputNews($news); ?>
+        <ul id="sm" class="sm">
+          <h2>pics and descripitons</h2>
+        </ul>
+  		<br />
+  		<div class="column floatL">
+        <h3 style="text-align:center"><a href="/research/"><i>Micro/Nanoengineered<br/>Platforms for Cell Mechanobiology</i></a></h3>
+  			<div style="text-align:center"><a href="/research/"><img src="/images/projects/project1.png" alt="Micro/Nanoengineered Platforms for Cell Mechanobiology" align="middle"> </a>
+        </div>
+  		</div>
+          
+      <div class="column floatR">
+  			<h3 style="text-align:center"><a href="/research/"><i>Autonomous Microfluidic <br/> Components, Circuits and Systems</i></a></h3>
+        <div style="text-align:center"><a href="/research/"><img src="/images/projects/project2.png" alt="Micro/Nanoengineered Platforms for Cell Mechanobiology" align="middle"> </a>
         </div>
       </div>
+    </div>
+    <div id="content">
+
+      <div class="columnSuperWide">
+        <h3><a href="/news/">News &amp; Awards</a></h3>
+        <?php outputNews($news); ?>
+      </div>
+    </div>
       
     </div>
   </div>
