@@ -212,6 +212,31 @@ function outputProjects($projects){
 	}
 }
 
+function outputPresentations($presentations){
+	foreach($presentations as $presentation){
+		$title = $presentation[0];
+		$description = $presentation[1];
+		$link = $presentation[2];
+		$id = $presentation[3];
+		?>
+		<div class="presentation">
+			<h3><a name="<?php echo $id; ?>"><?php echo $title; ?></a></h3>
+			<div class="paragraph">
+				<p>
+					<?php echo $description; ?>
+					<br/><br/>
+					<div align="center"> <iframe width="420" height="315"
+						src="<?php echo $link; ?>" frameborder="0" allowfullscreen>
+					</iframe></div>
+				</p>
+			</div>
+		</div>
+		
+		<div class="top"><a href="#">Back to Top</a></div>
+		<?php
+	}
+}
+
 function outputAccordionProjects($projects, $field){
 	foreach($projects as $project){
 		$id = $project[0];

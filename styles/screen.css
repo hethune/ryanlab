@@ -487,13 +487,34 @@ table.former td.name{ width: 25%; }
 	margin-bottom: 12px;
 }
 
+#research #content h2.inner{
+	margin-bottom: 12px;
+	font-style: italic;
+	color: #07375F;
+	font-size: 2em;
+	text-align:center;
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
 #research #content p{
-	padding: 0;
+	/*padding: 0;*/
 }
 
 #research .top{
 	margin-bottom: 24px;
 }
+
+#research .thumbnailL{
+	float: left;
+	width: 20%;
+	height: 100px;
+}
+#research .thumbnailR{
+	float: right;
+	width: 75%;
+	padding-top:35px;
+}
+
 
 .project{
 	width: 100%;
@@ -538,6 +559,61 @@ table.former td.name{ width: 25%; }
 	color: #333333;
 	font-style: normal;
 }
+
+.presentation{
+	width: 100%;
+	overflow: hidden;
+}
+
+.presentation h3{
+	text-align: center;
+}
+
+.presentation p{
+	padding-left: 5%;
+}
+
+.presentation .paragraph{
+	background-color: #F7F9FB;
+}
+
+.presentation .description{
+	width: 100%;
+}
+
+.presentation .description h3{
+	border-bottom: 1px solid #d2d2d2;
+	padding-bottom: 6px;
+}
+
+.presentation .description p{
+	padding-left: 7%;
+	padding-right: 7%;
+}
+
+
+.presentation .description h3, .presentation .description h3 a{
+	font-weight: bold;
+	margin-bottom: 12px;
+	line-height: 1em;
+	color: #333333;
+	cursor: default;
+}
+
+.presentation .description p.description{
+	margin-bottom: 12px;
+}
+
+.presentation .description p.lead{
+	font-style: italic;
+	color: #707070;
+}
+
+.presentation .description p.lead span{
+	color: #333333;
+	font-style: normal;
+}
+
 
 /* Dr. Lin's Page */
 /* -------------------------------- */
