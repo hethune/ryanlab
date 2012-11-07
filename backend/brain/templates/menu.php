@@ -30,6 +30,13 @@
 	?>
 </div>
 
+<div class="menuCol">
+	<div class="header">Oral Presentations</div>
+	<?php
+		$list->menu('menu','oral',array('a','e','d'));
+	?>
+</div>
+
 <!-- Research -->
 <!-- ========================== -->
 <div class="groupHeader">Research</div>

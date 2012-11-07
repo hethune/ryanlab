@@ -1,12 +1,6 @@
 <?php require('headers.php'); ?>
 <?php
 
-$heads = $sql->getRows("SELECT Title, FirstName, LastName, Email, Photo, Biography, Research, Degree FROM members WHERE Degree = 'Head' ORDER BY LastName");
-$grants = $sql->getRows("SELECT Title, FirstName, LastName, Email, Photo, Biography, Research, Degree FROM members WHERE Degree = 'Grants' ORDER BY LastName");
-$phds = $sql->getRows("SELECT Title, FirstName, LastName, Email, Photo, GraduationMonth, GraduationYear FROM members WHERE Degree = 'Ph.D.' ORDER BY LastName ASC");
-$masters = $sql->getRows("SELECT Title, FirstName, LastName, Email, Photo, GraduationMonth, GraduationYear FROM members WHERE Degree = 'M.S.' ORDER BY LastName ASC");
-$postDocs = $sql->getRows("SELECT Title, FirstName, LastName, Email, Photo, GraduationMonth, GraduationYear FROM members WHERE Degree = 'Post Doc' ORDER BY LastName ASC");
-$undergrads = $sql->getRows("SELECT Title, FirstName, LastName, Email, Photo, GraduationMonth, GraduationYear FROM members WHERE Degree = 'Undergrad' ORDER BY LastName ASC");
 
 $advisors = $sql->getRows("SELECT Title, FirstName, LastName, Email, Photo, Biography, Research, Degree FROM members WHERE Degree = 'Advisor' ORDER BY LastName");
 $program_directors = $sql->getRows("SELECT Title, FirstName, LastName, Email, Photo, Biography, Research, Degree FROM members WHERE Degree = 'ProgramDirector' ORDER BY LastName");

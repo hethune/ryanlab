@@ -7,7 +7,7 @@
 	<style type="text/css" media="screen">@import "brain/styles.css";</style>
 	<style type="text/css" media="screen">@import "generic.css";</style>
 	
-	<title>The Liwei Lin Lab - Backend</title>
+	<title>The M3B Lab | Backend</title>
 </head>
 
 <body id="">
@@ -20,8 +20,8 @@
       </div>
       
       <div id="content">
-      	<div id="bar"><span>LINLAB Backend | <a href="/backend/">Menu</a></span></div>
-		<?php include("brain/brain.php"); ?>
+      	<div id="bar"><span>The M3B Lab Backend | <a href="/backend/">Menu</a></span></div>
+		      <?php include("brain/brain.php"); ?>
       </div>
       
     </div>
