@@ -215,17 +215,57 @@ function outputProjects($projects){
 function outputPresentations($presentations){
 	foreach($presentations as $presentation){
 		$title = $presentation[0];
-		$description = $presentation[1];
-		$link = $presentation[2];
-		$id = $presentation[3];
+		$link = $presentation[1];
+		$year = $presentation[2];
+		$abbr = $presentation[3];
+		$conf = $presentation[4];
+		$hidden = $presentation[5];
+		$notes = $presentation[6];
+		$authors = $presentation[7];
+		$type = $presentation[8];
+		$place = $presentation[9];
+		$dates = $presentation[10];
 		?>
 		<div class="presentation">
-			<h3><a name="<?php echo $id; ?>"><?php echo $title; ?></a></h3>
+			<h3><a name="<?php echo $id; ?>"><?php echo trim($abbr);?>&nbsp;<?php echo $year; ?> - <i>"<?php echo trim($title); ?>"</i></a></h3>
 			<div class="paragraph">
 				<p>
-					<?php echo $description; ?>
+					<?php 
+						if ($authors) {
+							echo trim($authors); echo ",&nbsp;";
+						}
+						if ($title) {
+							echo "<i>";
+							echo trim($title);
+							echo "</i>,&nbsp;";
+						}
+						if ($type) {
+							echo trim($type);
+							echo "&nbsp;of&nbsp;";
+						}
+						if ($conf) {
+							echo trim($conf); 
+							echo ",&nbsp;";
+						}
+					?>
+					<?php 
+						if ($place) {
+							echo trim($place); echo ",&nbsp;";
+						}
+						if ($dates) {
+							echo trim($dates); echo ",&nbsp;";
+						}
+						if ($year) {
+							echo trim($year); echo ".&nbsp;";
+						}
+						if ($notes) {
+							echo "(";
+							echo trim($notes);
+							echo ")";
+						}
+					?>
 					<br/><br/>
-					<div align="center"> <iframe width="420" height="315"
+					<div align="center"> <iframe width="420" height="280"
 						src="<?php echo $link; ?>" frameborder="0" allowfullscreen>
 					</iframe></div>
 				</p>

@@ -5,14 +5,18 @@
 // News Template
 $form->start();
 $form->text('Title');
-$form->area('Description', array('rows'=>'10', 'cols'=>'40'));
+$form->text('Conference');
+$form->text('Abbreviation');
+$form->text('Authors');
+$form->text('Place');
+$form->text('Dates');
 $form->text('Link');
+$form->text('Notes');
 ?>
 
 <div class="col left">
 <?php
-$form->date('Month','m');
-$form->date('Day','d');
+$form->radio('Type', array('Proceedings' => 'Proceedings '));
 $form->date('Year','y');
 $form->submit('button');
 ?>
@@ -20,7 +24,7 @@ $form->submit('button');
 
 <div class="col left">
 <?php
-$form->radio('Featured', array('No' => '0', 'Yes' => '1'));
+$form->radio('Hidden', array('No' => '0', 'Yes' => '1'));
 ?>
 </div>
 
