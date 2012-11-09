@@ -12,9 +12,6 @@ $presentations = $sql->getRows("SELECT Title, Link, Year, abbreviation, Conferen
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
 	<link rel="stylesheet" type="text/css" media="all" href="/styles/screen.css" />
 
-	<script type="text/javascript" src="/slidemenu/slidemenu.js"></script>
-	<link rel="stylesheet" type="text/css" href="/slidemenu/slidemenu.css" />
-	
 	<title>Oral Presentations | The M3B Lab</title>
 </head>
 
