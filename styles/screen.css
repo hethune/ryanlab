@@ -549,9 +549,29 @@ table.former td.name{ width: 25%; }
 }
 
 #research .nav2{
-	float: right;
+	float: left;
 	width: 45%;
+	margin-left: 25px;
 }
+
+#research .nav11{
+	float: left;
+	width: 40%;
+}
+
+#research .nav22{
+	float: left;
+	width: 20%;
+	margin-left: 25px;
+}
+
+#research .nav33{
+	float: left;
+	width: 30%;
+	margin-left: 25px;
+}
+
+
 
 #research #detail{
 	overflow: hidden;
@@ -694,4 +714,9 @@ table.former td.name{ width: 25%; }
 .imgOpa {
 	opacity:0.7;
 	filter:alpha(opacity=30);
+}
+
+.imgBorder {
+	padding:1px;
+   	border:2px solid #A8C2E2;
 }
