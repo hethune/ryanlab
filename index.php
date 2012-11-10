@@ -33,25 +33,30 @@ $energy = $sql->getRows("SELECT id, Title, ShortAbstract, TinyPicture FROM proje
       </div>
       
       <div id="content">      	
-        <ul id="sm" class="sm">
-          <h2>pics and descripitons</h2>
-        </ul>
-  		<br />
-  		<div class="column floatL">
-        <h3 style="text-align:center"><a href="/research/"><i>Micro/Nanoengineered<br/>Platforms for Cell Mechanobiology</i></a></h3>
-  			<div style="text-align:center"><a href="/research/"><img src="/images/projects/project1.png" alt="Micro/Nanoengineered Platforms for Cell Mechanobiology" align="middle"> </a>
+        <div>
+          <img src="/images/headers/home-splash.png" alt="home pic">
         </div>
-  		</div>
-          
-      <div class="column floatR">
-  			<h3 style="text-align:center"><a href="/research/"><i>Autonomous Microfluidic <br/> Components, Circuits and Systems</i></a></h3>
-        <div style="text-align:center"><a href="/research/"><img src="/images/projects/project2.png" alt="Micro/Nanoengineered Platforms for Cell Mechanobiology" align="middle"> </a>
+        <div>
+          <p>
+            The <b><i>M<sup>3</sup>B Laboratory Program</i></b> – a subset of the <a href="http://linlab.me.berkeley.edu/">Liwei Lin Lab</a> – provides a unique opportunity for highly motivated undergraduate students to conduct research at the intersection of engineering and biology.  In our lab, we utilize mechanical engineering principles and micro/nanofabrication technologies to create: 
+          </p>
         </div>
-      </div>
+        <br/>      
+    		<div class="column floatL">
+          <h3 style="text-align:center"><a href="/research/"><i>Micro/Nanoengineered<br/>Platforms for Cell Mechanobiology</i></a></h3>
+    			<div style="text-align:center"><a href="/research/"><img src="/images/projects/project1.png" alt="Micro/Nanoengineered Platforms for Cell Mechanobiology" align="middle"> </a>
+          </div>
+    		</div>
+            
+        <div class="column floatR">
+    			<h3 style="text-align:center"><a href="/research/"><i>Autonomous Microfluidic <br/> Components, Circuits and Systems</i></a></h3>
+          <div style="text-align:center"><a href="/research/"><img src="/images/projects/project2.png" alt="Micro/Nanoengineered Platforms for Cell Mechanobiology" align="middle"> </a>
+          </div>
+        </div>
     </div>
     <div id="content">
 
-      <div class="columnSuperWide">
+    <div class="columnSuperWide">
         <h3><a href="/news/">News &amp; Awards</a></h3>
         <?php outputNews($news); ?>
       </div>

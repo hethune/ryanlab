@@ -1,7 +1,7 @@
 <?php require('../headers.php'); ?>
 <?php
 
-$presentations = $sql->getRows("SELECT Title, Link, Year, abbreviation, Conference, Hidden, Notes, Authors, Type, Place, Dates FROM oral ORDER BY id DESC");  
+$presentations = $sql->getRows("SELECT Title, Link, Year, abbreviation, Conference, Hidden, Notes, Authors, Type, Place, Dates FROM oral WHERE Hidden = '0' ORDER BY id DESC");  
  
 
 ?>

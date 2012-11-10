@@ -68,7 +68,8 @@ else {
       <div id="content">
         <div class="column floatM">
           <h3 style="text-align:center"><a href="/research/oral/"><i>Selected Oral Presentations</i></a></h3>
-
+          <div style="text-align:center"><a href="/research/oral/"><img src="/images/projects/oral.png" alt="Micro/Nanoengineered Platforms for Cell Mechanobiology" align="middle"> </a>
+          </div>
         </div>
 		
       </div>
