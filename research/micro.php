@@ -1,20 +1,5 @@
 <?php require('../headers.php'); ?>
-<?php
-// Get which field to pull content from
-$id = mysql_real_escape_string($_GET['field']);
 
-// Get Content
-if($id != null){
-  $projects = $sql->getRows("SELECT Title, LeadResearcher, Picture, Description, id FROM projects WHERE ResearchArea = '$id' ORDER BY id DESC");  
-  $field = $sql->getRows("SELECT Name FROM areas WHERE id = '$id' LIMIT 1");
-  $field = $field[0][0];
-}
-else {
-  $field = 'Featured';
-  $projects = $sql->getRows("SELECT Title, LeadResearcher, Picture, Description, id FROM projects WHERE Featured != 0 ORDER BY id DESC");  
-}
-
-?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -23,6 +8,23 @@ else {
 	<link rel="stylesheet" type="text/css" media="all" href="/styles/screen.css" />
 
   <script type="text/javascript" src="/script/jquery.js"></script>  
+
+  <script>
+    $(document).ready(function(){
+      $("#navl").click(function(){
+        $("#detail1").show();
+        $("#detail2").hide();
+        $("#navr").addClass('imgOpa');
+        $("#navl").removeClass('imgOpa');
+      });
+      $("#navr").click(function(){
+        $("#detail1").hide();
+        $("#detail2").show();
+        $("#navl").addClass('imgOpa');
+        $("#navr").removeClass('imgOpa');
+      });
+    });
+  </script>
 
 	<title>Research | The M3B Lab</title>
 </head>
@@ -55,15 +57,17 @@ else {
         </div>
 
         <div class="nav">
-          <div class="nav1">
-            <img src="/images/projects/micro1.png" alt="pic1" height="100" width="120" align="right">
+          <div id="navl" class="nav1">
+            <a href="#" class="darken"><img src="/images/projects/micro1.png" alt="pic1" height="100" width="120" align="right" background-color="#4C4646";>
+            </a>
           </div>
-          <div class="nav2">
-            <img src="/images/projects/micro2.png" alt="pic1" height="100" width="120" align="left">
+          <div id="navr" class="nav2">
+            <a href="#"><img src="/images/projects/micro2.png" alt="pic1" height="100" width="120" align="left">
+            </a>
           </div>
         </div>
 
-        <div class="detail">
+        <div id="detail1" class="detail">
           <h3>Micropost Arrays with Embedded Biophysical Stimuli</h3>
           <div style="overflow:hidden">
             <div style="float: left; width: 55%;">
@@ -80,7 +84,7 @@ else {
               <img src="/images/projects/micro4.png" alt="pic1" height="161" width="318">
             </div>
             <div style="float: right; width: 35%;">
-               <img src="/images/projects/micro3.png" alt="pic1" height="150" width="140">
+               <iframe width="150" height="161" src="" frameborder="2" allowfullscreen></iframe>
             </div>
           </div>
 
@@ -95,6 +99,35 @@ else {
               </li>
               <li>(<a href="/research/oral/">ORAL</a>)  Ryan D. Sochol, Adrienne T. Higa, Randall R. R. Janairo, Kedar G. Shah, Terry D. Johnson, Song Li, and Liwei Lin, Microscale Control of Micropost Stiffness to Induce Cellular Durotaxis, Proc. of the 12th International Conference on Miniaturized Systems for Chemistry and Life Sciences (µTAS 2008), San Diego, CA, USA, October 12-16, 2008.
               </li>
+
+
+            </ol>
+          </div>
+        </div>
+
+        <div id="detail2" class="detail" style="display:none">
+          <h3>MicroSpring Arrays for Tri-Axial Substrate Control</h3>
+          <div style="overflow:hidden">
+            <p> This new project was created to achieve user-control over the “tri-axial” stiffness of discrete, microscale substrate features for cell-based applications.  For this project, we collaborate with Prof. Shoji Takeuchi’s Biohybrid System Laboratory at the University of Tokyo.  In contrast to micropost arrays, which are inherently limited to “bi-axial” stiffness control, microSpring arrays enable researchers to geometrically tune the x-, y-, and z-axis stiffness of each microSpring.    
+            </p>
+          </div>
+
+          <div style="overflow:hidden">
+            <div style="align:center">
+              <img src="/images/projects/micro5.png" alt="pic1">
+            </div>
+          </div>
+
+          <div class="publication">
+            <p style="margin-top:3px"><i><u>Selected Publications</u></i></p>
+            <ol class="pub">
+              <li>Ryan D. Sochol, Song Li, Luke P. Lee, and Liwei Lin, Continuous Flow Multi-Stage Microfluidic Reactors via Hydrodynamic Railing of Microparticles. Lab on a Chip, Vol. 12, pp. 4168-4177, 2012.  Link
+              </li>
+              <li>Ryan D. Sochol, William E. R. Krieger, Mengqian Liu, Sarah Hesse, Jonathan Lei, Luke P. Lee, and Liwei Lin, A Continuous Flow “Rail-And-Trap” System for Autonomous Bead-Based Microfluidic Mixing and Visualization, Proc. of the 16th International 
+              </li>
+              <li>(<a href="/research/oral/">ORAL</a>)) Ryan D. Sochol, Ryan Ruelos, Valerie Chang, Megan Dueck, Luke P. Lee, and Liwei Lin, Continuous Flow Layer-by-Layer Microbead Functionalization via a Micropost Array Railing System, Proc. of the 16th International Conference on Solid-State Sensors, Actuators and Microsystems (Transducers 2011), Beijing, China, June 5-9, 2011. (Outstanding Paper Award)
+              </li>
+              
 
 
             </ol>
