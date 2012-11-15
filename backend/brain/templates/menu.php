@@ -23,12 +23,6 @@
 	?>
 </div>
 
-<div class="menuCol">
-	<div class="header">Sponsors</div>
-	<?php
-		$list->menu('menu','sponsors',array('a','e','d'));
-	?>
-</div>
 
 <div class="menuCol">
 	<div class="header">Oral Presentations</div>
@@ -37,48 +31,7 @@
 	?>
 </div>
 
-<!-- Research -->
-<!-- ========================== -->
-<div class="groupHeader">Research</div>
 
-<div class="menuCol">
-	<div class="header">Areas</div>
-	<?php
-		$list->menu('menu','areas',array('a','e','d'));
-	?>
-</div>
-
-<div class="menuCol">
-	<div class="header">Projects</div>
-	<?php
-		$list->menu('menu','projects',array('a','e','d'));
-	?>
-</div>
-
-<!-- Dr. Lin Profile -->
-<!-- ========================== -->
-<div class="groupHeader">Dr. Liwei Lin</div>
-
-<div class="menuCol">
-	<div class="header">Profile</div>
-	<?php
-		$list->menu('menu','linProfile',array('e'));
-	?>
-</div>
-
-<div class="menuCol">
-	<div class="header">Honors</div>
-	<?php
-		$list->menu('menu','linHonors',array('a','e','d'));
-	?>
-</div>
-
-<div class="menuCol">
-	<div class="header">Courses</div>
-	<?php
-		$list->menu('menu','linCourses',array('a','e','d'));
-	?>
-</div>
 
 <!-- Images -->
 <!-- ========================== -->
