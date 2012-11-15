@@ -423,12 +423,31 @@ table.former td.name{ width: 25%; }
 }
 
 #publications #content h3{
-	text-align: center;
-	padding: 8px 0;
+	margin-bottom: 12px;
+	color: #0A4994;
+	border-bottom-width: 5px  ;
+	border-bottom-color: #0A4994;
+	border-bottom-style: solid;
 }
 
 #publications .top{
 	margin-bottom: 16px;
+}
+
+#publications #content li{
+	/*font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;*/
+	background-color: #F7F9FB;
+	margin-bottom: 16px;
+}
+
+#publications #content a{
+	font-style: italic;
+	text-decoration: underline;
+}
+
+#publications #content ol{
+	list-style: decimal;
+	list-style-position: inside;
 }
 
 .pubs th{
@@ -650,6 +669,7 @@ table.former td.name{ width: 25%; }
 
 .presentation .paragraph{
 	background-color: #F7F9FB;
+	margin-bottom: 25px;
 }
 
 .presentation .description{

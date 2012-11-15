@@ -8,8 +8,8 @@ $form->start();
 <div class="col left">
 <?php
 $form->area('Bibliography', array('rows'=>'10', 'cols'=>'40'));
-$form->text('PDF');
-$form->text('Remote');
+$form->text('Link');
+$form->text('Image');
 ?>
 </div>
 

@@ -212,7 +212,66 @@ function outputProjects($projects){
 	}
 }
 
+function outputPublications($publications){
+	// var_dump($publications);
+	echo "<ol>";
+	foreach($publications as $pub){
+		$biblio = $pub[0];
+		$link = $pub[1];
+		$image=$pub[3];
+		?>
+		<div class="pubcontent">
+			<li>
+				<?php
+					echo $biblio; 
+					echo "&nbsp;"; 
+					if ($link) {
+						echo "<a href=";
+						echo $link;
+						echo ">link</a>";
+					}
+					if ($image) {
+						echo "<div style=\"text-align:center\"><img src=\"";
+						echo $image;
+						echo "\" alt=\"Pictures\" height=\"100\" width=\"160\" ";
+						echo "</div>";
+					}
+				?>
+			</li>
+		</div>
+		<?php
+	}
+	echo "</ol>";
+}
+
 function outputPresentations($presentations){
+	// var_dump($publications);
+	
+	foreach($presentations as $presentation){
+		$biblio = $presentation[0];
+		$link = $presentation[1];
+		$abbr = $presentation[3];
+		$year = $presentation[5];
+		$title = $presentation[6];
+		?>
+		<div class="presentation">
+			<h3><a name="<?php echo $id; ?>"><?php echo trim($abbr);?>&nbsp;<?php echo $year; ?> - <i>"<?php echo trim($title); ?>"</i></a></h3>
+			<div class="paragraph">
+				<p>
+					<?php echo trim($biblio); ?>
+					
+					<br/><br/>
+					<div align="center"> <iframe width="420" height="280"
+						src="<?php echo $link; ?>" frameborder="0" allowfullscreen>
+					</iframe></div>
+				</p>
+			</div>
+		</div>
+		<?php
+	}
+}
+
+function outputPresentationsII($presentations){
 	foreach($presentations as $presentation){
 		$title = $presentation[0];
 		$link = $presentation[1];

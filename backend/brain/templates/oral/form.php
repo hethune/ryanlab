@@ -1,30 +1,33 @@
-<div class="header">News</div>
-
+<div class="header">Oral Presentations</div>
 
 <?php
-// News Template
+// Member Template
 $form->start();
-$form->text('Title');
-$form->text('Conference');
-$form->text('Abbreviation');
-$form->text('Authors');
-$form->text('Place');
-$form->text('Dates');
-$form->text('Link');
-$form->text('Notes');
 ?>
+
 
 <div class="col left">
 <?php
-$form->radio('Type', array('Proceedings' => 'Proceedings '));
+$form->text('Title');
+$form->area('Bibliography', array('rows'=>'10', 'cols'=>'40'));
+$form->text('Link');
+$form->text('Abbreviation');
+?>
+</div>
+
+<div class="col left">
+<?php
+$form->select('Type', array( 'Proceeding' => 'Proceeding','Other' => 'Other'));
+$form->date('Month', 'm');
 $form->date('Year','y');
-$form->submit('button');
 ?>
 </div>
 
 <div class="col left">
 <?php
 $form->radio('Hidden', array('No' => '0', 'Yes' => '1'));
+$form->submit('button');
+
 ?>
 </div>
 
