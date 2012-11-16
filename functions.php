@@ -1,7 +1,8 @@
 <?php
 require('config.php');
+$IMAGEROOT = substr($DOCUMENTROOT,0,strlen($DOCUMENTROOT)-1);
 function outputMembers($group){
-	global $DOCUMENTROOT;
+	global $IMAGEROOT;
 	foreach($group as $person){
 		// Set parameters
 		$fullName = $person[0] . ' ' . $person[1] . ' ' . $person[2];
@@ -16,7 +17,7 @@ function outputMembers($group){
 		}
 		?>
 <div class="student">
-			<div class="thumb"><img class="portrait" src=" <?php echo substr($DOCUMENTROOT,1).$photo;  ?>" alt="<?php echo $fullName; ?>" /></div>
+			<div class="thumb"><img class="portrait" src=" <?php echo $IMAGEROOT.$photo;  ?>" alt="<?php echo $fullName; ?>" /></div>
 			<div class="name"><?php echo $fullName; ?></div>
 			<a class="email" href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
 		</div>
@@ -50,7 +51,7 @@ function outputMembersPast($group){
 }
 
 function outputFaculty($group){
-	global $DOCUMENTROOT;
+	global $IMAGEROOT;
 	foreach($group as $person){
 		// Set parameters
 		$fullName = $person[0] . ' ' . $person[1] . ' ' . $person[2];
@@ -68,7 +69,7 @@ function outputFaculty($group){
 		}
 		?>
 <div class="faculty">
-        	<img class="portrait" src="<?php echo substr($DOCUMENTROOT,1).$photo; ?>" alt="<?php echo $fullName; ?>" />
+        	<img class="portrait" src="<?php echo $IMAGEROOT.$photo; ?>" alt="<?php echo $fullName; ?>" />
         	<p class="bio">
         		<b><?php echo $fullName; ?></b><br />
 				<?php echo $position; ?>
@@ -194,7 +195,7 @@ function getLead($id){
 }
 
 function outputProjects($projects){
-	global $DOCUMENTROOT;
+	global $IMAGEROOT;
 	foreach($projects as $project){
 		$title = $project[0];
 		$lead = $project[1];
@@ -203,7 +204,7 @@ function outputProjects($projects){
 		$id = $project[4];
 		?>
 		<div class="project">
-			<div class="thumbnail"><img src="<?php echo substr($DOCUMENTROOT,1).$picture; ?>" alt="<?php echo $title; ?>" /></div>
+			<div class="thumbnail"><img src="<?php echo $IMAGEROOT.$picture; ?>" alt="<?php echo $title; ?>" /></div>
 			<div class="info">
 				<h3><a name="<?php echo $id; ?>"><?php echo $title; ?></a></h3>
 				<p class="description"><?php echo $description; ?></p>
