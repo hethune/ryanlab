@@ -1,5 +1,5 @@
 <?php require('config.php'); ?>
-<a id="logo" href="../"><span>The Micro Mechanical Methods for Biology (M <sup>3</sup>B) Laboratory</span></a>
+<a id="logo" href="<?php echo $DOCUMENTROOT ?>"><span>The Micro Mechanical Methods for Biology (M <sup>3</sup>B) Laboratory</span></a>
 		<ul id="menu">
 			<li><a id="navHome" href="<?php echo $DOCUMENTROOT ?>#">Home</a></li>
 			<li><a id="navNews" href="<?php echo $DOCUMENTROOT ?>news/">News &amp; Awards</a></li>
