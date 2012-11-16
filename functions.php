@@ -1,5 +1,7 @@
 <?php
+require('config.php');
 function outputMembers($group){
+	global $DOCUMENTROOT;
 	foreach($group as $person){
 		// Set parameters
 		$fullName = $person[0] . ' ' . $person[1] . ' ' . $person[2];
@@ -10,14 +12,13 @@ function outputMembers($group){
 		}
 		$photo = $person[4];
 		if($photo == null){
-			$photo = "../images/members/defaultMember.gif";
+			$photo = "/images/members/defaultMember.gif";
 		}
 		?>
 <div class="student">
-			<div class="thumb"><img class="portrait" src=" <?php echo $photo; ?>" alt="<?php echo $fullName; ?>" /></div>
+			<div class="thumb"><img class="portrait" src=" <?php echo substr($DOCUMENTROOT,1).$photo;  ?>" alt="<?php echo $fullName; ?>" /></div>
 			<div class="name"><?php echo $fullName; ?></div>
 			<a class="email" href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
-			<?php var_dump($photo); ?>
 		</div>
 		<?php
 	}
