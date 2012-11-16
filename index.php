@@ -43,14 +43,14 @@ $energy = $sql->getRows("SELECT id, Title, ShortAbstract, TinyPicture FROM proje
         </div>
         <br/>      
     		<div class="column floatL">
-          <h3 style="text-align:center"><a href="../research/"><i>Micro/Nanoengineered<br/>Platforms for Cell Mechanobiology</i></a></h3>
-    			<div style="text-align:center"><a href="../research/"><img src="images/projects/project1.png" alt="Micro/Nanoengineered Platforms for Cell Mechanobiology" align="middle"> </a>
+          <h3 style="text-align:center"><a href="research/micro.php"><i>Micro/Nanoengineered<br/>Platforms for Cell Mechanobiology</i></a></h3>
+    			<div style="text-align:center"><a href="research/micro.php"><img src="images/projects/project1.png" alt="Micro/Nanoengineered Platforms for Cell Mechanobiology" align="middle"> </a>
           </div>
     		</div>
             
         <div class="column floatR">
-    			<h3 style="text-align:center"><a href="../research/"><i>Autonomous Microfluidic <br/> Components, Circuits and Systems</i></a></h3>
-          <div style="text-align:center"><a href="../research/"><img src="images/projects/project2.png" alt="Micro/Nanoengineered Platforms for Cell Mechanobiology" align="middle"> </a>
+    			<h3 style="text-align:center"><a href="research/automous.php"><i>Autonomous Microfluidic <br/> Components, Circuits and Systems</i></a></h3>
+          <div style="text-align:center"><a href="research/automous.php"><img src="images/projects/project2.png" alt="Micro/Nanoengineered Platforms for Cell Mechanobiology" align="middle"> </a>
           </div>
         </div>
     </div>
