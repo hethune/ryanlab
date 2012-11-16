@@ -5,9 +5,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-  <link rel="stylesheet" type="text/css" media="all" href="/styles/screen.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="../../styles/screen.css" />
 
-  <script type="text/javascript" src="/script/jquery.js"></script>  
+  <script type="text/javascript" src="../../script/jquery.js"></script>  
 
   <script>
     $(document).ready(function(){
@@ -55,7 +55,7 @@
         <h1>Research</h1>
       
         <div class="thumbnailL">
-          <img src="/images/misc/project2.png" alt="project2.png" height="100" width="103" >
+          <img src="../../images/misc/project2.png" alt="project2.png" height="100" width="103" >
         </div>
         <div class="thumbnailR">
          <h2 class="inner">Autonomous Microfluidic</br>Components, Circuits and Systems</h2>
@@ -70,15 +70,15 @@
 
         <div class="nav">
           <div class="nav11">
-            <a href="#"><img id="navl" src="/images/projects/auto1.png" alt="pic1" height="100" width="180" align="right" background-color="#4C4646";>
+            <a href="#"><img id="navl" src="../../images/projects/auto1.png" alt="pic1" height="100" width="180" align="right" background-color="#4C4646";>
             </a>
           </div>
           <div class="nav22">
-            <a href="#"><img id="navm" src="/images/projects/auto2.png" alt="pic1" height="100" width="130" align="left">
+            <a href="#"><img id="navm" src="../../images/projects/auto2.png" alt="pic1" height="100" width="130" align="left">
             </a>
           </div>
           <div class="nav33">
-            <a href="#"><img id="navr" src="/images/projects/auto3.png" alt="pic1" height="100" width="130" align="left">
+            <a href="#"><img id="navr" src="../../images/projects/auto3.png" alt="pic1" height="100" width="130" align="left">
             </a>
           </div>
         </div>
@@ -97,7 +97,7 @@
 
           <div style="overflow:hidden">
             <div style="float: left; width: 45%;">
-              <img src="/images/projects/auto4.png" alt="pic1" height="161" width="280">
+              <img src="../../images/projects/auto4.png" alt="pic1" height="161" width="280">
             </div>
             <div style="float: left; width: 35%; margin-left:20px;">
                <iframe width="150" height="161" src="" frameborder="2" allowfullscreen></iframe>
@@ -111,7 +111,7 @@
               </li>
               <li>Ryan D. Sochol, William E. R. Krieger, Mengqian Liu, Sarah Hesse, Jonathan Lei, Luke P. Lee, and Liwei Lin, A Continuous Flow “Rail-And-Trap” System for Autonomous Bead-Based Microfluidic Mixing and Visualization, Proc. of the 16th International Conference on Miniaturized Systems for Chemistry and Life Sciences (µTAS 2012), Okinawa, Japan, Oct. 28 – Nov. 1, 2012.
               </li>
-              <li>(<a href="/research/oral/">ORAL</a>) Ryan D. Sochol, Ryan Ruelos, Valerie Chang, Megan Dueck, Luke P. Lee, and Liwei Lin, Continuous Flow Layer-by-Layer Microbead Functionalization via a Micropost Array Railing System, Proc. of the 16th International Conference on Solid-State Sensors, Actuators and Microsystems (Transducers 2011), Beijing, China, June 5-9, 2011. (Outstanding Paper Award)
+              <li>(<a href="../../research/oral/">ORAL</a>) Ryan D. Sochol, Ryan Ruelos, Valerie Chang, Megan Dueck, Luke P. Lee, and Liwei Lin, Continuous Flow Layer-by-Layer Microbead Functionalization via a Micropost Array Railing System, Proc. of the 16th International Conference on Solid-State Sensors, Actuators and Microsystems (Transducers 2011), Beijing, China, June 5-9, 2011. (Outstanding Paper Award)
               </li>
               
             </ol>
@@ -132,7 +132,7 @@
 
           <div style="overflow:hidden">
             <div style="float: left; width: 45%;">
-              <img src="/images/projects/auto5.png" alt="pic1" height="171" width="220">
+              <img src="../../images/projects/auto5.png" alt="pic1" height="171" width="220">
             </div>
             <div style="float: left; width: 35%; margin-left:20px;">
                <iframe width="150" height="161" src="" frameborder="2" allowfullscreen></iframe>
@@ -144,9 +144,9 @@
             <ol class="pub">
               <li>Ryan D. Sochol, Casey C. Glick, Kye Y. Lee, Thomas Brubaker, Albert Lu, Melissa Wah, Shan Gao, Erica Hicks, Ki Tae Wolf, Kosuke Iwai, Luke P. Lee, and Liwei Lin, Single-Layer “Domino” Diodes via Optofluidic Lithography for Ultra-Low Reynolds Number Applications, Proceedings of 26th IEEE International Conference on Micro Electro Mechanical Systems (MEMS 2012), Taipei, Taiwan, January 20-24, 2013. (Submitted) 
               </li>
-              <li>(<a href="/research/oral/">ORAL</a>) Ryan D. Sochol, Jonathan Lei, Albert Lu, Erica L. Hicks, Shan Gao, Vivek Menon, Luke P. Lee, and Liwei Lin, Circular Microchannels Enhance Diodicity Performance at Ultra-Low Reynolds Number for Microfluidic Bead-Based Diodes, Proc. of the 16th International Conference on Miniaturized Systems for Chemistry and Life Sciences (μTAS 2012), Okinawa, Japan, Oct. 28 – Nov. 1, 2012. 
+              <li>(<a href="../../research/oral/">ORAL</a>) Ryan D. Sochol, Jonathan Lei, Albert Lu, Erica L. Hicks, Shan Gao, Vivek Menon, Luke P. Lee, and Liwei Lin, Circular Microchannels Enhance Diodicity Performance at Ultra-Low Reynolds Number for Microfluidic Bead-Based Diodes, Proc. of the 16th International Conference on Miniaturized Systems for Chemistry and Life Sciences (μTAS 2012), Okinawa, Japan, Oct. 28 – Nov. 1, 2012. 
               </li>
-              <li>(<a href="/research/oral/">ORAL</a>) <u>Ryan D. Sochol</u>, Kosuke Iwai, Jonathan Lei, Deepak Lingam, Luke P. Lee, and Liwei Lin, A Single-Microbead-Based Microfluidic Diode for Ultra-Low Reynolds Number Applications, Proc. of the 25th IEEE International Conference on Micro Electro Mechanical Systems (MEMS 2012), Paris, France, Jan. 29 – Feb. 2, 2012.
+              <li>(<a href="../../research/oral/">ORAL</a>) <u>Ryan D. Sochol</u>, Kosuke Iwai, Jonathan Lei, Deepak Lingam, Luke P. Lee, and Liwei Lin, A Single-Microbead-Based Microfluidic Diode for Ultra-Low Reynolds Number Applications, Proc. of the 25th IEEE International Conference on Micro Electro Mechanical Systems (MEMS 2012), Paris, France, Jan. 29 – Feb. 2, 2012.
               </li>
               
             </ol>
@@ -167,7 +167,7 @@
 
           <div style="overflow:hidden">
             <div style="float: left; width: 45%;">
-              <img src="/images/projects/auto7.png" alt="pic1" height="161" width="280">
+              <img src="../../images/projects/auto7.png" alt="pic1" height="161" width="280">
             </div>
             <div style="float: left; width: 35%; margin-left:20px;">
                <iframe width="150" height="161" src="" frameborder="2" allowfullscreen></iframe>
@@ -181,7 +181,7 @@
               </li>
               <li>Ryan D. Sochol, Benjamin P. Casavant, Megan E. Dueck, Luke P. Lee, and Liwei Lin, A Dynamic Bead-Based Microarray for Parallel DNA Detection. Journal of Micromechanics and Microengineering, Vol. 21, pp. 054019, 2011.  Link
               </li>
-              <li>(<a href="/research/oral/">ORAL</a>) Ryan D. Sochol, Barthélémy Lüthi, Kosuke Iwai, Megan Dueck, Luke P. Lee, and Liwei Lin, A Resettable High-Density Microfluidic Particle Trapping System, Proc. of the 14th IEEE Solid-State Sensor and Actuator Workshop (Hilton Head 2010), Hilton Head Island, SC, USA, June 6-10, 2010.
+              <li>(<a href="../../research/oral/">ORAL</a>) Ryan D. Sochol, Barthélémy Lüthi, Kosuke Iwai, Megan Dueck, Luke P. Lee, and Liwei Lin, A Resettable High-Density Microfluidic Particle Trapping System, Proc. of the 14th IEEE Solid-State Sensor and Actuator Workshop (Hilton Head 2010), Hilton Head Island, SC, USA, June 6-10, 2010.
               </li>
               
             </ol>

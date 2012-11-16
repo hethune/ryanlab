@@ -6,14 +6,18 @@
 // Full paths to directories
 // Do NOT include trailing slash!
 
+$BACKEND = $_SERVER[DOCUMENT_ROOT];
+
+$FOLDER ="/";
+
 // Where is the brain stored?
-$BRAIN_PATH = '/home/hwen/labwebsite/www/backend/brain';
+$BRAIN_PATH = $BACKEND.$FOLDER.'backend/brain';
 
 // Where are the templates stored?
-$TEMPLATE_PATH = '/home/hwen/labwebsite/www/backend/brain/templates';
+$TEMPLATE_PATH = $BACKEND.$FOLDER.'backend/brain/templates';
 
 // What top level directory do you want to contain uploads?
-$UPLOAD_PATH = '/home/hwen/labwebsite/www/images';
+$UPLOAD_PATH = $BACKEND.$FOLDER.'images';
 
 // ----------------------------------------------------------
 

@@ -15,10 +15,10 @@ $energy = $sql->getRows("SELECT id, Title, ShortAbstract, TinyPicture FROM proje
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-	<link rel="stylesheet" type="text/css" media="all" href="/styles/screen.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="styles/screen.css" />
 
-	<script type="text/javascript" src="/slidemenu/slidemenu.js"></script>
-	<link rel="stylesheet" type="text/css" href="/slidemenu/slidemenu.css" />
+	<script type="text/javascript" src="slidemenu/slidemenu.js"></script>
+	<link rel="stylesheet" type="text/css" href="slidemenu/slidemenu.css" />
 	
 	<title>The M3B LAB</title>
 </head>
@@ -34,7 +34,7 @@ $energy = $sql->getRows("SELECT id, Title, ShortAbstract, TinyPicture FROM proje
       
       <div id="content">      	
         <div>
-          <img src="/images/headers/home-splash.png" alt="home pic">
+          <img src="images/headers/home-splash.png" alt="home pic">
         </div>
         <div>
           <p>
@@ -43,21 +43,21 @@ $energy = $sql->getRows("SELECT id, Title, ShortAbstract, TinyPicture FROM proje
         </div>
         <br/>      
     		<div class="column floatL">
-          <h3 style="text-align:center"><a href="/research/"><i>Micro/Nanoengineered<br/>Platforms for Cell Mechanobiology</i></a></h3>
-    			<div style="text-align:center"><a href="/research/"><img src="/images/projects/project1.png" alt="Micro/Nanoengineered Platforms for Cell Mechanobiology" align="middle"> </a>
+          <h3 style="text-align:center"><a href="../research/"><i>Micro/Nanoengineered<br/>Platforms for Cell Mechanobiology</i></a></h3>
+    			<div style="text-align:center"><a href="../research/"><img src="images/projects/project1.png" alt="Micro/Nanoengineered Platforms for Cell Mechanobiology" align="middle"> </a>
           </div>
     		</div>
             
         <div class="column floatR">
-    			<h3 style="text-align:center"><a href="/research/"><i>Autonomous Microfluidic <br/> Components, Circuits and Systems</i></a></h3>
-          <div style="text-align:center"><a href="/research/"><img src="/images/projects/project2.png" alt="Micro/Nanoengineered Platforms for Cell Mechanobiology" align="middle"> </a>
+    			<h3 style="text-align:center"><a href="../research/"><i>Autonomous Microfluidic <br/> Components, Circuits and Systems</i></a></h3>
+          <div style="text-align:center"><a href="../research/"><img src="images/projects/project2.png" alt="Micro/Nanoengineered Platforms for Cell Mechanobiology" align="middle"> </a>
           </div>
         </div>
     </div>
     <div id="content">
 
     <div class="columnSuperWide">
-        <h3><a href="/news/">News &amp; Awards</a></h3>
+        <h3><a href="../news/">News &amp; Awards</a></h3>
         <?php outputNews($news); ?>
       </div>
     </div>

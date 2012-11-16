@@ -10,7 +10,7 @@ $presentations = $sql->getRows("SELECT Bibliography, Link, Type, Abbreviation, M
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-	<link rel="stylesheet" type="text/css" media="all" href="/styles/screen.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="../../styles/screen.css" />
 
 	<title>Oral Presentations | The M3B Lab</title>
 </head>
@@ -29,7 +29,7 @@ $presentations = $sql->getRows("SELECT Bibliography, Link, Type, Abbreviation, M
       	
       
         <div class="thumbnailL">
-          <img src="/images/misc/oral.png" alt="Oral Presentation" height="100" width="103" >
+          <img src="../../images/misc/oral.png" alt="Oral Presentation" height="100" width="103" >
         </div>
         <div class="thumbnailR">
 	       <h2 class="inner">Selected Oral Presentations</h2>

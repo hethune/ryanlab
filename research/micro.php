@@ -5,9 +5,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-	<link rel="stylesheet" type="text/css" media="all" href="/styles/screen.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="../../styles/screen.css" />
 
-  <script type="text/javascript" src="/script/jquery.js"></script>  
+  <script type="text/javascript" src="../../script/jquery.js"></script>  
 
   <script>
     $(document).ready(function(){
@@ -43,7 +43,7 @@
       	<h1>Research</h1>
       
         <div class="thumbnailL">
-          <img src="/images/misc/project1.png" alt="Micro/Nanoengineered Platforms for Cell Mechanobiology" height="100" width="103" >
+          <img src="../../images/misc/project1.png" alt="Micro/Nanoengineered Platforms for Cell Mechanobiology" height="100" width="103" >
         </div>
         <div class="thumbnailR">
          <h2 class="inner">Micro/Nanoengineered Platforms <br/> for Cell Mechanobiology</h2>
@@ -58,11 +58,11 @@
 
         <div class="nav">
           <div id="navl" class="nav1">
-            <a href="#" class="darken"><img src="/images/projects/micro1.png" alt="pic1" height="100" width="120" align="right" background-color="#4C4646";>
+            <a href="#" class="darken"><img src="../../images/projects/micro1.png" alt="pic1" height="100" width="120" align="right" background-color="#4C4646";>
             </a>
           </div>
           <div id="navr" class="nav2">
-            <a href="#"><img src="/images/projects/micro2.png" alt="pic1" height="100" width="120" align="left">
+            <a href="#"><img src="../../images/projects/micro2.png" alt="pic1" height="100" width="120" align="left">
             </a>
           </div>
         </div>
@@ -75,13 +75,13 @@
               </p>
             </div>
             <div style="float: right; width: 35%;">
-               <img src="/images/projects/micro3.png" alt="pic1" height="150" width="140">
+               <img src="../../images/projects/micro3.png" alt="pic1" height="150" width="140">
             </div>
           </div>
 
           <div style="overflow:hidden">
             <div style="float: left; width: 55%;">
-              <img src="/images/projects/micro4.png" alt="pic1" height="161" width="318">
+              <img src="../../images/projects/micro4.png" alt="pic1" height="161" width="318">
             </div>
             <div style="float: right; width: 35%;">
                <iframe width="150" height="161" src="" frameborder="2" allowfullscreen></iframe>
@@ -95,9 +95,9 @@
               </li>
               <li>Ryan D. Sochol, Adrienne T. Higa, Randall R. R. Janairo, Song Li, and Liwei Lin, Effects of Micropost Spacing and Stiffness on Cell Motility. Micro and Nano Letters, Vol. 6, pp. 323-326, 2011.  Link
               </li>
-              <li>(<a href="/research/oral/">ORAL</a>) Ryan D. Sochol, Adrienne T. Higa, Randall R.R. Janairo, Annie Chou, Song Li, and Liwei Lin, Unidirectional Cellular Durotaxis via Microfabricated Posts of Varying Anisotropy, Proc. of the 15th International Conference on Solid-State Sensors, Actuators and Microsystems (Transducers 2009), Denver, CO, USA, June 21-25, 2009.
+              <li>(<a href="../../research/oral/">ORAL</a>) Ryan D. Sochol, Adrienne T. Higa, Randall R.R. Janairo, Annie Chou, Song Li, and Liwei Lin, Unidirectional Cellular Durotaxis via Microfabricated Posts of Varying Anisotropy, Proc. of the 15th International Conference on Solid-State Sensors, Actuators and Microsystems (Transducers 2009), Denver, CO, USA, June 21-25, 2009.
               </li>
-              <li>(<a href="/research/oral/">ORAL</a>)  Ryan D. Sochol, Adrienne T. Higa, Randall R. R. Janairo, Kedar G. Shah, Terry D. Johnson, Song Li, and Liwei Lin, Microscale Control of Micropost Stiffness to Induce Cellular Durotaxis, Proc. of the 12th International Conference on Miniaturized Systems for Chemistry and Life Sciences (µTAS 2008), San Diego, CA, USA, October 12-16, 2008.
+              <li>(<a href="../../research/oral/">ORAL</a>)  Ryan D. Sochol, Adrienne T. Higa, Randall R. R. Janairo, Kedar G. Shah, Terry D. Johnson, Song Li, and Liwei Lin, Microscale Control of Micropost Stiffness to Induce Cellular Durotaxis, Proc. of the 12th International Conference on Miniaturized Systems for Chemistry and Life Sciences (µTAS 2008), San Diego, CA, USA, October 12-16, 2008.
               </li>
 
 
@@ -114,7 +114,7 @@
 
           <div style="overflow:hidden">
             <div style="align:center">
-              <img src="/images/projects/micro5.png" alt="pic1">
+              <img src="../../images/projects/micro5.png" alt="pic1">
             </div>
           </div>
 
@@ -125,7 +125,7 @@
               </li>
               <li>Ryan D. Sochol, William E. R. Krieger, Mengqian Liu, Sarah Hesse, Jonathan Lei, Luke P. Lee, and Liwei Lin, A Continuous Flow “Rail-And-Trap” System for Autonomous Bead-Based Microfluidic Mixing and Visualization, Proc. of the 16th International 
               </li>
-              <li>(<a href="/research/oral/">ORAL</a>)) Ryan D. Sochol, Ryan Ruelos, Valerie Chang, Megan Dueck, Luke P. Lee, and Liwei Lin, Continuous Flow Layer-by-Layer Microbead Functionalization via a Micropost Array Railing System, Proc. of the 16th International Conference on Solid-State Sensors, Actuators and Microsystems (Transducers 2011), Beijing, China, June 5-9, 2011. (Outstanding Paper Award)
+              <li>(<a href="../../research/oral/">ORAL</a>)) Ryan D. Sochol, Ryan Ruelos, Valerie Chang, Megan Dueck, Luke P. Lee, and Liwei Lin, Continuous Flow Layer-by-Layer Microbead Functionalization via a Micropost Array Railing System, Proc. of the 16th International Conference on Solid-State Sensors, Actuators and Microsystems (Transducers 2011), Beijing, China, June 5-9, 2011. (Outstanding Paper Award)
               </li>
               
 

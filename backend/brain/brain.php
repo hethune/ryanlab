@@ -27,7 +27,6 @@ $list = new lister();
 
 
 
-
 // Pull table from url or post
 if(isset($_GET['t'])){
 	$table = $_GET['t'];

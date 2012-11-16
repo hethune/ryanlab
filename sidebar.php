@@ -1,13 +1,13 @@
-<a id="logo" href="/"><span>The Micro Mechanical Methods for Biology (M <sup>3</sup>B) Laboratory</span></a>
+<a id="logo" href="../"><span>The Micro Mechanical Methods for Biology (M <sup>3</sup>B) Laboratory</span></a>
 		<ul id="menu">
-			<li><a id="navHome" href="/">Home</a></li>
-			<li><a id="navNews" href="/news/">News &amp; Awards</a></li>
-			<li><a id="navResearch" href="/research.php">Research &amp; Videos</a></li>
-			<li><a id="navMembers" href="/members/">Members</a></li>
-			<li><a id="navPublications" href="/publications/">Publications</a></li>
-			<!-- <li><a id="navLin" href="/lin/">Professor Liwei Lin</a></li>
-			<li><a id="navSponsors" href="/sponsors/">Sponsors</a></li> -->
-			<li><a id="navPictures" href="/groupPictures/">Group Pictures</a></li>
+			<li><a id="navHome" href="<?php echo $DOCUMENTROOT ?>#">Home</a></li>
+			<li><a id="navNews" href="<?php echo $DOCUMENTROOT ?>news/">News &amp; Awards</a></li>
+			<li><a id="navResearch" href="<?php echo $DOCUMENTROOT ?>research.php">Research &amp; Videos</a></li>
+			<li><a id="navMembers" href="<?php echo $DOCUMENTROOT ?>members/">Members</a></li>
+			<li><a id="navPublications" href="<?php echo $DOCUMENTROOT ?>publications/">Publications</a></li>
+			<!-- <li><a id="navLin" href="../lin/">Professor Liwei Lin</a></li>
+			<li><a id="navSponsors" href="../sponsors/">Sponsors</a></li> -->
+			<li><a id="navPictures" href="<?php echo $DOCUMENTROOT ?>groupPictures/">Group Pictures</a></li>
 
 		</ul>
 

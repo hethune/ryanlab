@@ -20,7 +20,7 @@
       </div>
       
       <div id="content">
-      	<div id="bar"><span>The M3B Lab Backend | <a href="/backend/">Menu</a></span></div>
+      	<div id="bar"><span>The M3B Lab Backend | <a href="../backend/">Menu</a></span></div>
 		      <?php include("brain/brain.php"); ?>
       </div>
       

@@ -40,7 +40,7 @@ if(isset($_POST['upload'])){
 			</div>
 			
 			<div id="content">
-				<div id="bar"><span>LINLAB Backend | <a href="/projects/linlab/backend/">Menu</a></span></div>
+				<div id="bar"><span>M3B LAB Backend | <a href="../projects/linlab/backend/">Menu</a></span></div>
 				<h2><?php echo $_GET['dir']; ?></h2>
 				<?php
 				if(isset($message)){

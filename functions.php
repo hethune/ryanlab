@@ -10,7 +10,7 @@ function outputMembers($group){
 		}
 		$photo = $person[4];
 		if($photo == null){
-			$photo = "/images/members/defaultMember.gif";
+			$photo = "../images/members/defaultMember.gif";
 		}
 		?>
 <div class="student">
@@ -354,7 +354,7 @@ function outputAccordionProjects($projects, $field){
 <div class="project">
 			<div class="thumb"><img src="<?php echo $picture; ?>" alt=""></div>
 			<div class="details">
-				<h4><a href="/research/<?php echo $category; ?>/#<?php echo $id; ?>"><?php echo $title; ?></a></h4>
+				<h4><a href="../research/<?php echo $category; ?>/#<?php echo $id; ?>"><?php echo $title; ?></a></h4>
 				<p><?php echo $abstract; ?></p>
 			</div>
 		</div>
