@@ -3,7 +3,6 @@
 	require("mysqlbridge.class.php");
 	require("functions.php");
 
-	static $DOCUMENTROOT = "/";
 
 	// Initialize Database
 	$sql = new mysqlBridge();

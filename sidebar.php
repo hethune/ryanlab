@@ -1,3 +1,4 @@
+<?php static $DOCUMENTROOT = "/"; ?>
 <a id="logo" href="../"><span>The Micro Mechanical Methods for Biology (M <sup>3</sup>B) Laboratory</span></a>
 		<ul id="menu">
 			<li><a id="navHome" href="<?php echo $DOCUMENTROOT ?>#">Home</a></li>
@@ -28,6 +29,8 @@
 			<b>Dr. Sochol's Cell:</b> (410) 935-8971<br/>
 			<b>E-MAIL:</b>rsochol@gmail.com
 			</p>
+
+			<?php var_dump($DOCUMENTROOT); ?>
 
 		</div>
         

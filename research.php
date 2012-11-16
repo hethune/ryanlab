@@ -26,10 +26,7 @@ else {
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-	<link rel="stylesheet" type="text/css" media="all" href="../styles/screen.css" />
-
-	<script type="text/javascript" src="../slidemenu/slidemenu.js"></script>
-	<link rel="stylesheet" type="text/css" href="../slidemenu/slidemenu.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="styles/screen.css" />
 	
 	<title>Research &amp; Videos | The M3B Lab</title>
 </head>
@@ -54,21 +51,21 @@ else {
         <br/>        
 
         <div class="column floatL">
-          <h3 style="text-align:center"><a href="../research/micro/"><i>Micro/Nanoengineered<br/>Platforms for Cell Mechanobiology</i></a></h3>
-          <div style="text-align:center"><a href="../research/micro/"><img src="../images/projects/project1.png" alt="Micro/Nanoengineered Platforms for Cell Mechanobiology" align="middle"> </a>
+          <h3 style="text-align:center"><a href="research/micro/"><i>Micro/Nanoengineered<br/>Platforms for Cell Mechanobiology</i></a></h3>
+          <div style="text-align:center"><a href="research/micro/"><img src="images/projects/project1.png" alt="Micro/Nanoengineered Platforms for Cell Mechanobiology" align="middle"> </a>
           </div>
         </div>
             
         <div class="column floatR">
-          <h3 style="text-align:center"><a href="../research/automous/"><i>Autonomous Microfluidic <br/> Components, Circuits and Systems</i></a></h3>
-          <div style="text-align:center"><a href="../research/automous/"><img src="../images/projects/project2.png" alt="Micro/Nanoengineered Platforms for Cell Mechanobiology" align="middle"> </a>
+          <h3 style="text-align:center"><a href="research/automous/"><i>Autonomous Microfluidic <br/> Components, Circuits and Systems</i></a></h3>
+          <div style="text-align:center"><a href="research/automous/"><img src="images/projects/project2.png" alt="Micro/Nanoengineered Platforms for Cell Mechanobiology" align="middle"> </a>
           </div>
         </div>
       </div>
       <div id="content">
         <div class="column floatM">
-          <h3 style="text-align:center"><a href="../research/oral/"><i>Selected Oral Presentations</i></a></h3>
-          <div style="text-align:center"><a href="../research/oral/"><img src="../images/projects/oral.png" alt="Micro/Nanoengineered Platforms for Cell Mechanobiology" align="middle"> </a>
+          <h3 style="text-align:center"><a href="research/oral/"><i>Selected Oral Presentations</i></a></h3>
+          <div style="text-align:center"><a href="research/oral/"><img src="images/projects/oral.png" alt="Micro/Nanoengineered Platforms for Cell Mechanobiology" align="middle"> </a>
           </div>
         </div>
 		

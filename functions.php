@@ -17,6 +17,7 @@ function outputMembers($group){
 			<div class="thumb"><img class="portrait" src=" <?php echo $photo; ?>" alt="<?php echo $fullName; ?>" /></div>
 			<div class="name"><?php echo $fullName; ?></div>
 			<a class="email" href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
+			<?php var_dump($photo); ?>
 		</div>
 		<?php
 	}
