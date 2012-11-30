@@ -11,26 +11,60 @@
 
   <script>
     $(document).ready(function(){
-      $("#navl").click(function(){
-        $("#detail1").show();
-        $("#detail2").hide();
-        $("#detail3").hide();
+      var sec1 = "Continuous_Flow_Particulate_Based_Microfluidic_Reactors";
+      var sec2 = "Self_Regulating_Microfluidic_Circuit_Components_for_Ultra_Low_Reynolds_Number_Applications";
+      var sec3 = "Resettable_Hydrodynamic_Particulate_Based_Arraying_Systems";
+      var url = location.href;
+      url = url.substring(url.indexOf("#")+1,url.length)
+      switch(url) {
+        case sec1:
+          $("#detail1").slideDown(0,'linear');
+          break;
+        case sec2:
+          $("#detail2").slideDown(0,'linear');
+          break;
+        case sec3:
+          $("#detail3").slideDown(0,'linear');
+          break;
+      }
+
+      
+      $("#sec-header1").click(function(event){
+        event.preventDefault();
+        $("#detail1").slideToggle(0,'linear');
+      });
+
+      $("#sec-header2").click(function(event){
+        event.preventDefault();
+        $("#detail2").slideToggle(0,'linear');
+      });
+
+      $("#sec-header3").click(function(event){
+        event.preventDefault();
+        $("#detail3").slideToggle(0,'linear');
+      });
+
+      $("#navl").click(function(event){
+        event.preventDefault();
+        $("#detail1").slideDown(0,'linear');
+        $("#detail2").slideUp(0,'linear');
+        $("#detail3").slideUp(0,'linear');
         $("#navl").addClass('imgBorder');
         $("#navm").removeClass('imgBorder');
         $("#navr").removeClass('imgBorder');
       });
       $("#navm").click(function(){
-        $("#detail1").hide();
-        $("#detail2").show();
-        $("#detail3").hide();
+        $("#detail1").slideUp(0,'linear');
+        $("#detail2").slideDown(0,'linear');
+        $("#detail3").slideUp(0,'linear');
         $("#navl").removeClass('imgBorder');
         $("#navm").addClass('imgBorder');
         $("#navr").removeClass('imgBorder');
       });
       $("#navr").click(function(){
-        $("#detail1").hide();
-        $("#detail2").hide();
-        $("#detail3").show();
+        $("#detail1").slideUp(0,'linear');
+        $("#detail2").slideUp(0,'linear');
+        $("#detail3").slideDown(0,'linear');
         $("#navl").removeClass('imgBorder');
         $("#navm").removeClass('imgBorder');
         $("#navr").addClass('imgBorder');
@@ -70,21 +104,24 @@
 
         <div class="nav">
           <div class="nav11">
-            <a href="#"><img id="navl" src="../../images/projects/auto1.png" alt="pic1" height="100" width="180" align="right" background-color="#4C4646";>
+            <a href="#Continuous_Flow_Particulate_Based_Microfluidic_Reactors"><img id="navl" src="../../images/projects/auto1.png" alt="pic1" height="100" width="180" align="right" background-color="#4C4646";>
             </a>
           </div>
           <div class="nav22">
-            <a href="#"><img id="navm" src="../../images/projects/auto2.png" alt="pic1" height="100" width="130" align="left">
+            <a href="#Self_Regulating_Microfluidic_Circuit_Components_for_Ultra_Low_Reynolds_Number_Applications"><img id="navm" src="../../images/projects/auto2.png" alt="pic1" height="100" width="130" align="left">
             </a>
           </div>
           <div class="nav33">
-            <a href="#"><img id="navr" src="../../images/projects/auto3.png" alt="pic1" height="100" width="130" align="left">
+            <a href="#Resettable_Hydrodynamic_Particulate_Based_Arraying_Systems"><img id="navr" src="../../images/projects/auto3.png" alt="pic1" height="100" width="130" align="left">
             </a>
           </div>
         </div>
-
+        
+        <div id="sec-header1" class="sec-header">
+          <a name="Continuous_Flow_Particulate_Based_Microfluidic_Reactors"></a>
+          <a href="#"><h3>Continuous Flow Particulate-Based Microfluidic Reactors</h3></a>
+        </div>
         <div id="detail1" class="detail">
-          <h3>Continuous Flow Particulate-Based Microfluidic Reactors</h3>
           <div style="overflow:hidden">
             <div style="float: left; width: 55%;">
               <p> The ability to perform “multi-stage” fluidic mixing operations with suspended particles, such as living cells and micro/nanobeads, is a critical requirement for diverse chemical and biological applications.        In our lab, we combine hydrodynamic railing and trapping techniques in order to passively execute multi-step particulate-based fluidic reaction processes, while enabling optical detection during each fluidic mixing stage.  Scale Bars = 100 µm
@@ -118,8 +155,12 @@
           </div>
         </div>
 
-        <div id="detail2" class="detail" style="display:none">
-          <h3>Self-Regulating Microfluidic Circuit Components for Ultra-Low Reynolds Number Applications</h3>
+        <div id="sec-header2" class="sec-header">
+          <a name="Self_Regulating_Microfluidic_Circuit_Components_for_Ultra_Low_Reynolds_Number_Applications"></a>
+          <a href="#"><h3>Self-Regulating Microfluidic Circuit Components for Ultra-Low Reynolds Number Applications</h3></a>
+        </div>
+
+        <div id="detail2" class="detail">
           <div style="overflow:hidden">
             <div style="float: left; width: 55%;">
               <p> To fully realize the promise of the next generation of integrated microfluidic circuitry, researchers will need microfluidic components that: (i) are analogous to those of electrical circuits, and (ii) operate under ultra-low Reynolds number conditions.  In our lab, we use a wide range of techniques to engineer microfluidic components (e.g., diodes, capacitors and transistors) for accomplishing functional chemical and biological microprocessors.   Scale Bars = 50 µm
@@ -153,8 +194,13 @@
           </div>
         </div>
 
-         <div id="detail3" class="detail" style="display:none">
-          <h3>Resettable Hydrodynamic Particulate-Based Arraying Systems</h3>
+        <div id="sec-header3" class="sec-header">
+          <a name="Resettable_Hydrodynamic_Particulate_Based_Arraying_Systems"></a>
+          <a href="#"><h3>Resettable Hydrodynamic Particulate-Based Arraying Systems</h3></a>
+        </div>
+
+
+         <div id="detail3" class="detail">
           <div style="overflow:hidden">
             <div style="float: left; width: 55%;">
               <p> Precision hydrodynamic controls of suspended particles (e.g., living cells and micro/nanobeads) are integral to a wide range of lab-on-a-chip applications, such as point-of-care molecular diagnostics and on-site chemical detection.  In our lab, we use hydrodynamic methodologies to rapidly trap suspended particles in array positions for visualization, and then release the arrayed particles by reversing the flow polarity.  Scale Bar = 50 µm

@@ -592,7 +592,8 @@ table.former td.name{ width: 25%; }
 
 
 
-#research #detail{
+#research .detail{
+	display: none;
 	overflow: hidden;
 	width: 100%;
 }

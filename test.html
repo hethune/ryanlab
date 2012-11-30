@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>一款效果平滑的JQuery展开折叠层丨芯晴网页特效丨CsrCode.Cn</title>
+<script type="text/javascript" src="../../script/jquery.js"></script>  
+<script type="text/javascript">
+$(function()
+{
+
+    $("#mostrar").click(function(event) {
+        event.preventDefault();
+        $("#caja").slideToggle();
+    });
+
+    $("#caja a").click(function(event) {
+        event.preventDefault();
+        $("#caja").slideUp();
+    });
+});
+</script>
+<style type="text/css">
+    body {
+     font-family: Verdana, Arial, Helvetica, sans-serif;
+     font-size: 11px;
+     color: #666666; 
+    }
+    a{color:#993300; text-decoration:none;}
+    #caja {
+    width:70%;
+    display: none;
+    padding:5px;
+    border:2px solid #FADDA9;
+    background-color:#FDF4E1;
+    }
+    #mostrar{
+    display:block;
+    width:70%;
+    padding:5px;
+    border:2px solid #D0E8F4;
+    background-color:#ECF8FD;
+    }
+</style>
+</head>
+<body>
+<a href="#" id="mostrar">点击展开详细……（若效果失效 ，请刷新本页面，载入jquery后就正常了！）</a>
+
+<div id="caja">
+<a href="#" class="close">[x]关闭</a>
+<p>曾经有一份真诚的爱情摆在我的面前<br>但是我没有珍惜<br>等到了失去的时候才后悔莫及<br>尘世间最痛苦的事莫过于此<br>如果上天可以给我一个机会再来一次的话<Br>我会跟那个女孩子说'我爱你'<br>如果非要把这份爱加上一个期限<br>我希望是一万年!</p>
+</div>
+</body>
+</html>
+
+<p align="center">本特效由 <a href="http://www.CsrCode.cn">芯晴网页特效</a>丨CsrCode.Cn 收集于互联网，只为兴趣与学习交流，不作商业用途。</p>

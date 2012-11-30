@@ -24,9 +24,8 @@
 			1113 Etcheverry Hall #1740<br />
 			Berkeley, CA 94720-1740</p>
 	
-			<p id="phone"><b>LAB Phone:</b> (510) 642-8983<br />
-			<b>LAB Fax:</b> (510) 643-6637<br/>
-			<b>Dr. Sochol's Cell:</b> (410) 935-8971<br/>
+			<p><b> Dr. Ryan Sochol </b></p>
+			<p id="phone"><b>Cell:</b> (410) 935-8971<br />
 			<b>E-MAIL:</b>rsochol@gmail.com
 			</p>
 
