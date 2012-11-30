@@ -128,7 +128,7 @@
               </p>
             </div>
             <div style="float: left; width: 35%; margin-left:20px;">
-                <iframe height="150" src="" frameborder="2" allowfullscreen></iframe>
+                <iframe width="250" height="150" src="http://www.youtube.com/embed/nYGFXmEU7bQ" frameborder="2" allowfullscreen></iframe>
             </div>
           </div>
 
@@ -137,7 +137,7 @@
               <img src="../../images/projects/auto4.png" alt="pic1" height="161" width="280">
             </div>
             <div style="float: left; width: 35%; margin-left:20px;">
-               <iframe width="150" height="161" src="" frameborder="2" allowfullscreen></iframe>
+               <iframe width="350" height="161" src="http://www.youtube.com/embed/Co9r8bCu8zU" frameborder="2" allowfullscreen></iframe>
             </div>
           </div>
 
@@ -166,17 +166,17 @@
               <p> To fully realize the promise of the next generation of integrated microfluidic circuitry, researchers will need microfluidic components that: (i) are analogous to those of electrical circuits, and (ii) operate under ultra-low Reynolds number conditions.  In our lab, we use a wide range of techniques to engineer microfluidic components (e.g., diodes, capacitors and transistors) for accomplishing functional chemical and biological microprocessors.   Scale Bars = 50 µm
               </p>
             </div>
-            <div style="float: left; width: 35%; margin-left:20px;">
-                <iframe height="150" src="" frameborder="2" allowfullscreen></iframe>
+            <div style="float: left; width: 35%; margin-left:10px;">
+              <img src="../../images/projects/Sochol_Presents.jpg" alt="Sochol_Presents" height="171" width="320">
             </div>
           </div>
 
           <div style="overflow:hidden">
-            <div style="float: left; width: 45%;">
+            <div style="float: left; width: 35%;">
               <img src="../../images/projects/auto5.png" alt="pic1" height="171" width="220">
             </div>
-            <div style="float: left; width: 35%; margin-left:20px;">
-               <iframe width="150" height="161" src="" frameborder="2" allowfullscreen></iframe>
+            <div style="float: left; width: 35%; margin-left:10px;">
+               <iframe width="400" height="201" src="http://www.youtube.com/embed/i8MsZUY11PM" frameborder="2" allowfullscreen></iframe>
             </div>
           </div>
 
@@ -207,7 +207,7 @@
               </p>
             </div>
             <div style="float: left; width: 35%; margin-left:20px;">
-                <iframe height="150" src="" frameborder="2" allowfullscreen></iframe>
+                <iframe height="150" width="250" src="http://www.youtube.com/embed/wjSDvNTjQE8" frameborder="2" allowfullscreen></iframe>
             </div>
           </div>
 
@@ -215,8 +215,8 @@
             <div style="float: left; width: 45%;">
               <img src="../../images/projects/auto7.png" alt="pic1" height="161" width="280">
             </div>
-            <div style="float: left; width: 35%; margin-left:20px;">
-               <iframe width="150" height="161" src="" frameborder="2" allowfullscreen></iframe>
+            <div style="float: left; width: 35%; margin-left:10px;">
+               <iframe width="350" height="201" src="http://www.youtube.com/embed/Co9r8bCu8zU" frameborder="2" allowfullscreen></iframe>
             </div>
           </div>
 
