@@ -104,7 +104,7 @@
               <p> Micropost arrays offer a powerful platform for geometrically customizing the biophysical characteristics of discrete, microscale substrate features.  For example, by increasing micropost radii (and therefore, stiffness) from post-to-post, we have created micropost array stiffness gradients capable of enhancing cell movement in the direction of increasing micropost stiffness (see the YouTube video on the lower right).  Scale Bar = 10 µm  
               </p>
             </div>
-            <div style="float: right; width: 35%;">
+            <div style="float: left; width: 35%; margin-left:60px;">
                <img src="../../images/projects/micro3.png" alt="pic1" height="150" width="140">
             </div>
           </div>
@@ -113,8 +113,8 @@
             <div style="float: left; width: 55%;">
               <img src="../../images/projects/micro4.png" alt="pic1" height="161" width="318">
             </div>
-            <div style="float: right; width: 35%;">
-               <iframe width="150" height="161" src="" frameborder="2" allowfullscreen></iframe>
+            <div style="float: left; width: 35%;">
+               <iframe width="250" height="161" src="http://www.youtube.com/embed/RtYXYHOj1BE" frameborder="2" allowfullscreen></iframe>
             </div>
           </div>
 

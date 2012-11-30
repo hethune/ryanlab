@@ -551,7 +551,7 @@ table.former td.name{ width: 25%; }
 	height: 100px;
 }
 #research .thumbnailR{
-	float: right;
+	float: left;
 	width: 75%;
 	padding-top:25px;
 	height: 80px;
