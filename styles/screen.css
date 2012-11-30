@@ -251,7 +251,7 @@ ul#articles a, ul#courses a, ul#honors a{
 .clearR{ clear: right; }
 .floatL{ float: left; }
 .floatR{ float: right; }
-.floatM{ margin: 0 auto; }
+.floatM{ margin: 0 auto; width:80%;}
 
 /* Home */
 /* -------------------------------- */

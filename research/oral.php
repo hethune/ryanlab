@@ -29,7 +29,7 @@ $presentations = $sql->getRows("SELECT Bibliography, Link, Type, Abbreviation, M
       	
       
         <div class="thumbnailL">
-          <img src="../../images/misc/oral.png" alt="Oral Presentation" height="100" width="103" >
+          <img src="../../images/projects/oral.png" alt="Sochol_Presents" height="100" width="103" >
         </div>
         <div class="thumbnailR">
 	       <h2 class="inner">Selected Oral Presentations</h2>
