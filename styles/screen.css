@@ -598,6 +598,17 @@ table.former td.name{ width: 25%; }
 	width: 100%;
 }
 
+#research .sec-header {
+	background-color: #EEEEEE;
+    border-radius: 6px 6px 6px 6px;
+    margin-top: 30px;
+    padding: 6px;
+}
+
+#research .sec-header h3{
+	font-size: 1.1em;
+}
+
 
 
 

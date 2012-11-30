@@ -11,15 +11,41 @@
 
   <script>
     $(document).ready(function(){
+      var sec1 = "Micropost_Arrays_with_Embedded_Biophysical_Stimuli";
+      var sec2 = "MicroSpring_Arrays_for_Tri-Axial_Substrate_Control";
+      var url = location.href;
+      url = url.substring(url.indexOf("#")+1,url.length)
+      switch(url) {
+        case sec1:
+          $("#detail1").slideDown(0,'linear');
+          $("#navr").addClass('imgOpa');
+          break;
+        case sec2:
+          $("#detail2").slideDown(0,'linear');
+          $("#navl").addClass('imgOpa');
+          break;
+      }
+
+      $("#sec-header1").click(function(event){
+        event.preventDefault();
+        $("#detail1").slideToggle(0,'linear');
+      });
+
+      $("#sec-header2").click(function(event){
+        event.preventDefault();
+        $("#detail2").slideToggle(0,'linear');
+      });
+
+
       $("#navl").click(function(){
-        $("#detail1").show();
-        $("#detail2").hide();
+        $("#detail1").slideDown(0,'linear');
+        $("#detail2").slideUp(0,'linear');
         $("#navr").addClass('imgOpa');
         $("#navl").removeClass('imgOpa');
       });
       $("#navr").click(function(){
-        $("#detail1").hide();
-        $("#detail2").show();
+        $("#detail1").slideUp(0,'linear');
+        $("#detail2").slideDown(0,'linear');
         $("#navl").addClass('imgOpa');
         $("#navr").removeClass('imgOpa');
       });
@@ -58,17 +84,21 @@
 
         <div class="nav">
           <div id="navl" class="nav1">
-            <a href="#" class="darken"><img src="../../images/projects/micro1.png" alt="pic1" height="100" width="120" align="right" background-color="#4C4646";>
+            <a href="#Micropost_Arrays_with_Embedded_Biophysical_Stimuli" class="darken"><img src="../../images/projects/micro1.png" alt="pic1" height="100" width="120" align="right" background-color="#4C4646";>
             </a>
           </div>
           <div id="navr" class="nav2">
-            <a href="#"><img src="../../images/projects/micro2.png" alt="pic1" height="100" width="120" align="left">
+            <a href="#MicroSpring_Arrays_for_Tri-Axial_Substrate_Control"><img src="../../images/projects/micro2.png" alt="pic1" height="100" width="120" align="left">
             </a>
           </div>
         </div>
 
+        <div id="sec-header1" class="sec-header">
+          <a name="Micropost_Arrays_with_Embedded_Biophysical_Stimuli"></a>
+          <a href="#"><h3>Micropost Arrays with Embedded Biophysical Stimuli</h3></a>
+        </div>
+
         <div id="detail1" class="detail">
-          <h3>Micropost Arrays with Embedded Biophysical Stimuli</h3>
           <div style="overflow:hidden">
             <div style="float: left; width: 55%;">
               <p> Micropost arrays offer a powerful platform for geometrically customizing the biophysical characteristics of discrete, microscale substrate features.  For example, by increasing micropost radii (and therefore, stiffness) from post-to-post, we have created micropost array stiffness gradients capable of enhancing cell movement in the direction of increasing micropost stiffness (see the YouTube video on the lower right).  Scale Bar = 10 µm  
@@ -105,8 +135,12 @@
           </div>
         </div>
 
+        <div id="sec-header1" class="sec-header">
+          <a name="MicroSpring_Arrays_for_Tri-Axial_Substrate_Control"></a>
+          <a href="#"><h3>MicroSpring Arrays for Tri-Axial Substrate Control</h3></a>
+        </div>
+
         <div id="detail2" class="detail" style="display:none">
-          <h3>MicroSpring Arrays for Tri-Axial Substrate Control</h3>
           <div style="overflow:hidden">
             <p> This new project was created to achieve user-control over the “tri-axial” stiffness of discrete, microscale substrate features for cell-based applications.  For this project, we collaborate with Prof. Shoji Takeuchi’s Biohybrid System Laboratory at the University of Tokyo.  In contrast to micropost arrays, which are inherently limited to “bi-axial” stiffness control, microSpring arrays enable researchers to geometrically tune the x-, y-, and z-axis stiffness of each microSpring.    
             </p>
