@@ -1,0 +1,5 @@
+AuthUserFile /home/hwen/labwebsite/www/backend/.htpasswd
+AuthName EnterPassword
+AuthType Basic
+
+require valid-user
