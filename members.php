@@ -33,7 +33,7 @@ $alumni = $sql->getRows("SELECT Title, FirstName, LastName, GraduationMonth, Gra
       	<h1>Members</h1>
 
         <h2>Faculty Director/Collaborators</h2>
-        <?php outputFaculty($advisors); ?>
+        <?php outputMembers($advisors); ?>
 
         <h2>Program Director</h2>
         <?php outputFaculty($program_directors); ?>

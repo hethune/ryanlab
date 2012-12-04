@@ -303,6 +303,13 @@ ul#twitter_update_list{
 
 #members #content h2{
 	margin-bottom: 16px;
+	color: #004D85;
+    clear: both;
+    font-size: 2em;
+    line-height: 1em;
+    padding-right: 8px;
+    border-bottom: 5px solid #004D85;
+    padding-bottom: 2px;
 }
 
 .faculty{
