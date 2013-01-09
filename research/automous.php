@@ -1,5 +1,11 @@
 <?php require('../headers.php'); ?>
 
+<?php
+$part1 = $sql->getRows("SELECT Title, Texts, Images, Videos, Publications FROM researches WHERE Title = 'Continuous Flow Particulate-Based Microfluidic Reactors'");
+$part2 = $sql->getRows("SELECT Title, Texts, Images, Videos, Publications FROM researches WHERE Title = 'Self-Regulating Microfluidic Circuit Components for Ultra-Low Reynolds Number Applications'");
+$part3 = $sql->getRows("SELECT Title, Texts, Images, Videos, Publications FROM researches WHERE Title = 'Resettable Hydrodynamic Particulate-Based Arraying Systems'");
+?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -117,12 +123,13 @@
           </div>
         </div>
         
-        <div id="sec-header1" class="sec-header">
+       <!--  <div id="sec-header1" class="sec-header">
           <a name="Continuous_Flow_Particulate_Based_Microfluidic_Reactors"></a>
           <a href="#"><h3>Continuous Flow Particulate-Based Microfluidic Reactors</h3></a>
-        </div>
+        </div> -->
         <div id="detail1" class="detail">
-          <div style="overflow:hidden">
+          <?php outputResearches($part1); ?>
+          <!-- <div style="overflow:hidden">
             <div style="float: left; width: 55%;">
               <p> The ability to perform “multi-stage” fluidic mixing operations with suspended particles, such as living cells and micro/nanobeads, is a critical requirement for diverse chemical and biological applications.        In our lab, we combine hydrodynamic railing and trapping techniques in order to passively execute multi-step particulate-based fluidic reaction processes, while enabling optical detection during each fluidic mixing stage.  Scale Bars = 100 µm
               </p>
@@ -152,16 +159,17 @@
               </li>
               
             </ol>
-          </div>
+          </div> -->
         </div>
 
-        <div id="sec-header2" class="sec-header">
+        <!-- <div id="sec-header2" class="sec-header">
           <a name="Self_Regulating_Microfluidic_Circuit_Components_for_Ultra_Low_Reynolds_Number_Applications"></a>
           <a href="#"><h3>Self-Regulating Microfluidic Circuit Components for Ultra-Low Reynolds Number Applications</h3></a>
-        </div>
+        </div> -->
 
         <div id="detail2" class="detail">
-          <div style="overflow:hidden">
+          <?php outputResearches($part2); ?>
+          <!-- <div style="overflow:hidden">
             <div style="float: left; width: 55%;">
               <p> To fully realize the promise of the next generation of integrated microfluidic circuitry, researchers will need microfluidic components that: (i) are analogous to those of electrical circuits, and (ii) operate under ultra-low Reynolds number conditions.  In our lab, we use a wide range of techniques to engineer microfluidic components (e.g., diodes, capacitors and transistors) for accomplishing functional chemical and biological microprocessors.   Scale Bars = 50 µm
               </p>
@@ -191,17 +199,18 @@
               </li>
               
             </ol>
-          </div>
+          </div> -->
         </div>
 
-        <div id="sec-header3" class="sec-header">
+        <!-- <div id="sec-header3" class="sec-header">
           <a name="Resettable_Hydrodynamic_Particulate_Based_Arraying_Systems"></a>
           <a href="#"><h3>Resettable Hydrodynamic Particulate-Based Arraying Systems</h3></a>
-        </div>
+        </div> -->
 
 
          <div id="detail3" class="detail">
-          <div style="overflow:hidden">
+          <?php outputResearches($part3); ?>
+          <!-- <div style="overflow:hidden">
             <div style="float: left; width: 55%;">
               <p> Precision hydrodynamic controls of suspended particles (e.g., living cells and micro/nanobeads) are integral to a wide range of lab-on-a-chip applications, such as point-of-care molecular diagnostics and on-site chemical detection.  In our lab, we use hydrodynamic methodologies to rapidly trap suspended particles in array positions for visualization, and then release the arrayed particles by reversing the flow polarity.  Scale Bar = 50 µm
               </p>
@@ -231,7 +240,7 @@
               </li>
               
             </ol>
-          </div>
+          </div> -->
         </div>
 
       </div>
