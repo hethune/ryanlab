@@ -238,7 +238,7 @@ function outputPublications($publications){
 					if ($image) {
 						echo "<div style=\"text-align:center\"><img src=\"";
 						echo $image;
-						echo "\" alt=\"Pictures\" height=\"100\" width=\"160\" ";
+						echo "\" alt=\"Pictures\" height=\"300\" width=\"480\" ";
 						echo "</div>";
 					}
 				?>
@@ -248,6 +248,80 @@ function outputPublications($publications){
 	}
 	echo "</ol>";
 }
+
+function outputResearches($research){
+	$research = $research[0];
+	
+	$title = $research[0];
+	$text = $research[1];
+	$images = $research[2];
+	$videos = $research[3];
+	$pubs = $research[4];
+	// var_dump(empty($images));
+
+	$image = null;
+	$video = null;
+	$pub = null;
+	if (!empty($images)) {$image = explode(";",$images);}
+	if (!empty($videos)) {$video = explode(";",$videos);}
+	if (!empty($pubs)) {$pub = explode(";",$pubs);}
+
+	?>
+
+	<div class="sec-header">
+          <a name="<?php echo $title; ?> "></a>
+          <a href="#"><h3><?php echo $title; ?> </h3></a>
+    </div>
+
+	<div style="overflow:hidden">
+	    <p><?php echo trim($text); ?>
+	    </p>
+	</div>
+
+	<div style="overflow:hidden">
+		<?php
+			if ($image) {
+				echo "print image";
+				var_dump($image);
+				foreach($image as $img){
+				    echo "<div style=\"align:center\">";
+				    echo "<img src=\"$img\" alt=\"pic1\">";
+				    echo "</div>";
+				}
+			}
+		?>
+	</div>
+
+	<div style="overflow:hidden">
+		<?php
+			if ($video) {
+				foreach ($video as $vi) {
+		            echo "<div style=\"text-align:center\">";
+		            echo "<iframe width=\"450\" height=\"261\" src=\"$vi\" frameborder=\"2\" style=\"margin:0 auto;\" allowfullscreen></iframe>";
+		            echo "</div>";
+		        }
+	        }
+        ?>
+    </div>
+
+	<div class="publication">
+		<?php
+			if ($pub) {
+			    echo "<p style=\"margin-top:3px\"><i><u>Selected Publications</u></i></p>";
+			    echo "<ol class=\"pub\">";
+			    	foreach ($pub as $publication) {
+				    	echo "<li>";
+				    	echo $publication;
+				    	echo "</li>";
+					}
+				echo "</ol>";
+			}
+		?>
+	</div>
+	<?php
+}
+
+
 
 function outputPresentations($presentations){
 	// var_dump($publications);

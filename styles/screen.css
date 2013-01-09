@@ -600,6 +600,7 @@ table.former td.name{ width: 25%; }
 
 
 #research .detail{
+	background-color: #EEEEEE;
 	display: none;
 	overflow: hidden;
 	width: 100%;
@@ -608,7 +609,6 @@ table.former td.name{ width: 25%; }
 #research .sec-header {
 	background-color: #EEEEEE;
     border-radius: 6px 6px 6px 6px;
-    margin-top: 30px;
     padding: 6px;
 }
 

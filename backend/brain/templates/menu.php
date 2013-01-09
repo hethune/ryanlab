@@ -31,6 +31,13 @@
 	?>
 </div>
 
+<div class="menuCol">
+	<div class="header">Researches</div>
+	<?php
+		$list->menu('menu','researches',array('a','e','d'));
+	?>
+</div>
+
 
 
 <!-- Images -->
