@@ -29,18 +29,11 @@ $part2 = $sql->getRows("SELECT Title, Texts, Images, Videos, Publications FROM r
           $("#detail2").slideDown(0,'linear');
           $("#navl").addClass('imgOpa');
           break;
+        default:
+          $("#detail1").slideDown(0,'linear');
+          $("#navr").addClass('imgOpa');
+          break;
       }
-
-      // $("#sec-header1").click(function(event){
-      //   event.preventDefault();
-      //   $("#detail1").slideToggle(0,'linear');
-      // });
-
-      // $("#sec-header2").click(function(event){
-      //   event.preventDefault();
-      //   $("#detail2").slideToggle(0,'linear');
-      // });
-
 
       $("#navl").click(function(){
         $("#detail1").slideDown(0,'linear');

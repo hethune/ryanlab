@@ -250,6 +250,9 @@ function outputPublications($publications){
 }
 
 function outputResearches($research){
+	global $IMAGEROOT;
+	global $DOCUMENTROOT;
+
 	$research = $research[0];
 	
 	$title = $research[0];
@@ -281,11 +284,10 @@ function outputResearches($research){
 	<div style="overflow:hidden">
 		<?php
 			if ($image) {
-				echo "print image";
-				var_dump($image);
 				foreach($image as $img){
-				    echo "<div style=\"align:center\">";
-				    echo "<img src=\"$img\" alt=\"pic1\">";
+					$full_image = $IMAGEROOT.$img;
+				    echo "<div style=\"text-align:center; padding-top:10px;\">";
+				    echo "<img src=\"$full_image\" alt=\"pic1\">";
 				    echo "</div>";
 				}
 			}
@@ -296,7 +298,7 @@ function outputResearches($research){
 		<?php
 			if ($video) {
 				foreach ($video as $vi) {
-		            echo "<div style=\"text-align:center\">";
+		            echo "<div style=\"text-align:center; padding-top:10px;\">";
 		            echo "<iframe width=\"450\" height=\"261\" src=\"$vi\" frameborder=\"2\" style=\"margin:0 auto;\" allowfullscreen></iframe>";
 		            echo "</div>";
 		        }
@@ -307,9 +309,17 @@ function outputResearches($research){
 	<div class="publication">
 		<?php
 			if ($pub) {
+				$old = "ORAL";
+				$new = "<a href=\"".$DOCUMENTROOT."research/oral/\">"."ORAL</a>";
+				$tmpOldStrLength = strlen($old);
+
 			    echo "<p style=\"margin-top:3px\"><i><u>Selected Publications</u></i></p>";
 			    echo "<ol class=\"pub\">";
 			    	foreach ($pub as $publication) {
+			    		$offset = strpos($publication, $old, $offset);
+						if ($offset) {
+  							$publication = substr_replace($publication, $new, $offset, $tmpOldStrLength);
+						}
 				    	echo "<li>";
 				    	echo $publication;
 				    	echo "</li>";
