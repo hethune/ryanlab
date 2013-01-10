@@ -32,6 +32,9 @@ $part3 = $sql->getRows("SELECT Title, Texts, Images, Videos, Publications FROM r
         case sec3:
           $("#detail3").slideDown(0,'linear');
           break;
+        default:
+          $("#detail1").slideDown(0,'linear');
+          break;
       }
 
       
