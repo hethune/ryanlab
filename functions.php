@@ -238,7 +238,7 @@ function outputPublications($publications){
 					if ($image) {
 						echo "<div style=\"text-align:center\"><img src=\"";
 						echo $image;
-						echo "\" alt=\"Pictures\" height=\"300\" width=\"480\" ";
+						echo "\" alt=\"Pictures\" height=\"450\" width=\"660\" ";
 						echo "</div>";
 					}
 				?>
@@ -247,6 +247,31 @@ function outputPublications($publications){
 		<?php
 	}
 	echo "</ol>";
+}
+
+function outputGroupPictures($pictures){
+	echo "<ul>";
+	foreach($pictures as $pic){
+		$description = $pic[0];
+		$image=$pic[1];
+		?>
+		<div>
+			<li>
+				<?php
+					if ($image) {
+						echo "<div style=\"text-align:center\"><img src=\"";
+						echo $image;
+						echo "\" alt=\"Pictures\"";
+						echo "</div>";
+					}
+					echo "&nbsp;"; 
+					echo $description; 
+				?>
+			</li>
+		</div>
+		<?php
+	}
+	echo "</ul>";
 }
 
 function outputResearches($research){

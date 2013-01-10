@@ -38,6 +38,13 @@
 	?>
 </div>
 
+<div class="menuCol">
+	<div class="header">Group Picture</div>
+	<?php
+		$list->menu('menu','groupPicture',array('a','e','d'));
+	?>
+</div>
+
 
 
 <!-- Images -->

@@ -491,6 +491,84 @@ table.former td.name{ width: 25%; }
 	text-align: center;
 }
 
+
+
+/* Group Pictures Page */
+/* -------------------------------- */
+#groupPictures #content h1{
+	background-image: url("../images/headers/groupPictures.jpg");
+}
+
+#groupPictures #content h2{
+	text-align: center;
+	border-bottom: 1px solid #c7c7c7;
+	background: url("images/publicationYearBg.gif") no-repeat bottom center;
+	padding: 4px 0;
+}
+
+#groupPictures #content h3{
+	margin-bottom: 12px;
+	color: #0A4994;
+	border-bottom-width: 5px  ;
+	border-bottom-color: #0A4994;
+	border-bottom-style: solid;
+}
+
+#groupPictures .top{
+	margin-bottom: 16px;
+}
+
+#groupPictures #content li{
+	/*font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;*/
+	background-color: #F7F9FB;
+	margin-bottom: 16px;
+}
+
+#groupPictures #content a{
+	font-style: italic;
+	text-decoration: underline;
+}
+
+#groupPictures #content ol{
+	list-style: decimal;
+	list-style-position: inside;
+}
+
+.pubs th{
+	font-weight: bold;
+	background-color: #edf3f3;
+	color: #1a5052;
+	border-top: 1px solid #d2e2e3;
+	border-right: 1px solid #9fc2c4;
+	border-bottom: 1px solid #9fc2c4;
+	border-left: 1px solid #d2e2e3;
+	text-align: left;
+}
+
+.pubs tr{
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.pubs tr.zebra{
+	background-color: #efefef;
+}
+
+.pubs td{
+	vertical-align: top;
+}
+
+.pubs th, .pubs td{
+	padding: 4px 6px;
+}
+
+.pubs td.cite{
+}
+
+.pubs td.id, .pubs td.pdf{
+	text-align: center;
+}
+
+
 /* Sponsors Page */
 /* -------------------------------- */
 #sponsors h1{
