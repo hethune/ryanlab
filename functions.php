@@ -262,7 +262,7 @@ function outputPublications($publications){
 					if ($image) {
 						echo "<div style=\"text-align:center\"><img src=\"";
 						echo $image;
-						echo "\" alt=\"Pictures\" ";
+						echo "\" alt=\"Pictures\" height=\"auto\" width=\"80%\" ";
 						echo "</div>";
 					}
 				?>
