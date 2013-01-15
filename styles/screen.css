@@ -365,6 +365,38 @@ ul#twitter_update_list{
 	height: 1em;
 }
 
+.advisor{
+	float: left;
+	width: 25%;
+	text-align: center;
+	margin: 0 0 18px 0
+}
+
+.advisor .thumb, .advisor .name{
+	display: block;
+	margin: 0 auto;
+}
+
+.advisor .thumb{
+	width: 120px;
+	height: 120px;
+	overflow: hidden;
+	text-align: center;
+}
+
+.advisor .name{
+	font-weight: bold;
+}
+
+.advisor .thumb img.portrait{
+	vertical-align: middle;
+}
+
+.advisor a.email{
+	height: 1em;
+}
+
+
 table#alumni tr.zebra td{
   background-color: #efefef;
 }

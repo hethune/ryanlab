@@ -16,7 +16,31 @@ function outputMembers($group){
 			$photo = "/images/members/defaultMember.gif";
 		}
 		?>
-<div class="student">
+		<div class="student">
+			<div class="thumb"><img class="portrait" src=" <?php echo $IMAGEROOT.$photo;  ?>" alt="<?php echo $fullName; ?>" /></div>
+			<div class="name"><?php echo $fullName; ?></div>
+			<a class="email" href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
+		</div>
+		<?php
+	}
+}
+
+function outputAdvisors($group){
+	global $IMAGEROOT;
+	foreach($group as $person){
+		// Set parameters
+		$fullName = $person[0] . ' ' . $person[1] . ' ' . $person[2];
+		$graduation = $person[5] . '/' . $person[6];
+		$email = $person[3];
+		if($email == null){
+			$email = '#" style="visibility: hidden;';
+		}
+		$photo = $person[4];
+		if($photo == null){
+			$photo = "/images/members/defaultMember.gif";
+		}
+		?>
+		<div class="advisor">
 			<div class="thumb"><img class="portrait" src=" <?php echo $IMAGEROOT.$photo;  ?>" alt="<?php echo $fullName; ?>" /></div>
 			<div class="name"><?php echo $fullName; ?></div>
 			<a class="email" href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
