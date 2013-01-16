@@ -25,15 +25,19 @@ $part3 = $sql->getRows("SELECT Title, Texts, Images, Videos, Publications FROM r
       switch(url) {
         case sec1:
           $("#detail1").slideDown(0,'linear');
+          $("#navl").addClass('imgBorder');
           break;
         case sec2:
           $("#detail2").slideDown(0,'linear');
+          $("#navm").addClass('imgBorder');
           break;
         case sec3:
           $("#detail3").slideDown(0,'linear');
+          $("#navr").addClass('imgBorder');
           break;
         default:
           $("#detail1").slideDown(0,'linear');
+          $("#navl").addClass('imgBorder');
           break;
       }
 
@@ -54,7 +58,6 @@ $part3 = $sql->getRows("SELECT Title, Texts, Images, Videos, Publications FROM r
       });
 
       $("#navl").click(function(event){
-        event.preventDefault();
         $("#detail1").slideDown(0,'linear');
         $("#detail2").slideUp(0,'linear');
         $("#detail3").slideUp(0,'linear');
